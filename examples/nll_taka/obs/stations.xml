@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+ <FDSNStationXML xmlns="http://www.fdsn.org/xml/station/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:iris="http://www.fdsn.org/xml/station/1/iris" xsi:schemaLocation="http://www.fdsn.org/xml/station/1 http://www.fdsn.org/xml/station/fdsn-station-1.1.xsd" schemaVersion="1.1">
+  <Source>IRIS-DMC</Source>
+  <Sender>IRIS-DMC</Sender>
+  <Module>IRIS WEB SERVICE: fdsnws-station | version: 1.1.52</Module>
+  <ModuleURI>https://service.iris.edu/fdsnws/station/1/query?format=xml&amp;level=station&amp;lat=51.873&amp;lon=-178.006&amp;maxradius=1.0</ModuleURI>
+  <Created>2025-08-07T00:06:54.6005</Created>
+  <Network code="AV" startDate="1988-01-01T00:00:00.0000" restrictedStatus="open">
+   <Description>Alaska Volcano Observatory (AVO)</Description>
+   <Identifier type="DOI">10.7914/SN/AV
+   </Identifier>
+   <TotalNumberStations>303</TotalNumberStations>
+   <SelectedNumberStations>22</SelectedNumberStations>
+   <Station code="ADAG" startDate="1999-09-15T00:00:00.0000" restrictedStatus="open" iris:alternateNetworkCodes="_REALTIME,.UNRESTRICTED,_US-REGIONAL,.VOLCANO">
+    <Latitude>51.98004</Latitude>
+    <Longitude>-176.60023</Longitude>
+    <Elevation>293.0</Elevation>
+    <Site>
+     <Name>Mount Adagdak, Regional Station, Alaska</Name>
+    </Site>
+    <CreationDate>1999-09-15T00:00:00.0000</CreationDate>
+    <TotalNumberChannels>10</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+   <Station code="ADKI" startDate="2017-06-08T00:00:00.0000" restrictedStatus="open" iris:alternateNetworkCodes="_REALTIME,.UNRESTRICTED,_US-REGIONAL">
+    <Latitude>51.8617</Latitude>
+    <Longitude>-176.6448</Longitude>
+    <Elevation>6.0</Elevation>
+    <Site>
+     <Name>Adak Infrasound Array, Adak Island, Alaska</Name>
+     <Description>Regional</Description>
+    </Site>
+    <CreationDate>2017-06-08T00:00:00.0000</CreationDate>
+    <TotalNumberChannels>11</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+   <Station code="ETKA" startDate="1999-07-11T00:00:00.0000" restrictedStatus="open" iris:alternateNetworkCodes="_REALTIME,.UNRESTRICTED,_US-REGIONAL,.VOLCANO">
+    <Latitude>51.86187</Latitude>
+    <Longitude>-176.40565</Longitude>
+    <Elevation>248.0</Elevation>
+    <Site>
+     <Name>Kagalaska Island, Regional Station, Alaska</Name>
+    </Site>
+    <CreationDate>1999-07-11T00:00:00.0000</CreationDate>
+    <TotalNumberChannels>7</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+   <Station code="GAEA" startDate="2003-08-30T00:00:00.0000" restrictedStatus="open" iris:alternateNetworkCodes="_REALTIME,.UNRESTRICTED,_US-REGIONAL,.VOLCANO">
+    <Latitude>51.7819</Latitude>
+    <Longitude>-178.7488</Longitude>
+    <Elevation>326.0</Elevation>
+    <Site>
+     <Name>East, Gareloi Volcano, Alaska</Name>
+    </Site>
+    <CreationDate>2003-08-30T00:00:00.0000</CreationDate>
+    <TotalNumberChannels>8</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+   <Station code="GAKI" startDate="2003-09-01T00:00:00.0000" restrictedStatus="open" iris:alternateNetworkCodes="_REALTIME,.UNRESTRICTED,_US-REGIONAL,.VOLCANO">
+    <Latitude>51.5534</Latitude>
+    <Longitude>-178.814</Longitude>
+    <Elevation>99.0</Elevation>
+    <Site>
+     <Name>Kavalga Island, Gareloi Volcano, Alaska</Name>
+    </Site>
+    <CreationDate>2003-09-01T00:00:00.0000</CreationDate>
+    <TotalNumberChannels>7</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+   <Station code="GALA" startDate="2003-08-30T00:00:00.0000" restrictedStatus="open" iris:alternateNetworkCodes="_REALTIME,.UNRESTRICTED,_US-REGIONAL,.VOLCANO">
+    <Latitude>51.760629</Latitude>
+    <Longitude>-178.77365</Longitude>
+    <Elevation>313.0</Elevation>
+    <Site>
+     <Name>Lava Point, Gareloi Volcano, Alaska</Name>
+    </Site>
+    <CreationDate>2003-08-30T00:00:00.0000</CreationDate>
+    <TotalNumberChannels>11</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+   <Station code="GANE" startDate="2003-09-02T00:00:00.0000" restrictedStatus="open" iris:alternateNetworkCodes="_REALTIME,.UNRESTRICTED,_US-REGIONAL,.VOLCANO">
+    <Latitude>51.817787</Latitude>
+    <Longitude>-178.77859</Longitude>
+    <Elevation>300.0</Elevation>
+    <Site>
+     <Name>Northeast, Gareloi Volcano, Alaska</Name>
+    </Site>
+    <CreationDate>2003-09-02T00:00:00.0000</CreationDate>
+    <TotalNumberChannels>8</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+   <Station code="GANO" startDate="2003-09-02T00:00:00.0000" restrictedStatus="open" iris:alternateNetworkCodes="_REALTIME,.UNRESTRICTED,_US-REGIONAL,.VOLCANO">
+    <Latitude>51.8192</Latitude>
+    <Longitude>-178.8058</Longitude>
+    <Elevation>451.0</Elevation>
+    <Site>
+     <Name>North, Gareloi Volcano, Alaska</Name>
+    </Site>
+    <CreationDate>2003-09-02T00:00:00.0000</CreationDate>
+    <TotalNumberChannels>7</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+   <Station code="GASW" startDate="2003-08-30T00:00:00.0000" restrictedStatus="open" iris:alternateNetworkCodes="_REALTIME,.UNRESTRICTED,_US-REGIONAL,.VOLCANO">
+    <Latitude>51.777633</Latitude>
+    <Longitude>-178.856549</Longitude>
+    <Elevation>252.0</Elevation>
+    <Site>
+     <Name>Southwest, Gareloi Volcano, Alaska</Name>
+    </Site>
+    <CreationDate>2003-08-30T00:00:00.0000</CreationDate>
+    <TotalNumberChannels>16</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+   <Station code="KICM" startDate="1999-09-15T00:00:00.0000" restrictedStatus="open" iris:alternateNetworkCodes="_REALTIME,.UNRESTRICTED,_US-REGIONAL,.VOLCANO">
+    <Latitude>51.91896</Latitude>
+    <Longitude>-177.19559</Longitude>
+    <Elevation>173.0</Elevation>
+    <Site>
+     <Name>Cape Miga, Kanaga Volcano, Alaska</Name>
+    </Site>
+    <CreationDate>1999-09-15T00:00:00.0000</CreationDate>
+    <TotalNumberChannels>7</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+   <Station code="KIKV" startDate="1999-09-15T00:00:00.0000" restrictedStatus="open" iris:alternateNetworkCodes="_REALTIME,.UNRESTRICTED,_US-REGIONAL,.VOLCANO">
+    <Latitude>51.878494</Latitude>
+    <Longitude>-177.17061</Longitude>
+    <Elevation>403.0</Elevation>
+    <Site>
+     <Name>Kanaga Volcano, Kanaga Volcano, Alaska</Name>
+    </Site>
+    <CreationDate>1999-09-15T00:00:00.0000</CreationDate>
+    <TotalNumberChannels>10</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+   <Station code="KIMD" startDate="1999-09-15T00:00:00.0000" restrictedStatus="open" iris:alternateNetworkCodes="_REALTIME,.UNRESTRICTED,_US-REGIONAL,.VOLCANO">
+    <Latitude>51.761504</Latitude>
+    <Longitude>-177.235207</Longitude>
+    <Elevation>173.1</Elevation>
+    <Site>
+     <Name>MID Benchmark, Kanaga Volcano, Alaska</Name>
+    </Site>
+    <CreationDate>1999-09-15T00:00:00.0000</CreationDate>
+    <TotalNumberChannels>8</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+   <Station code="KINC" startDate="1999-09-15T00:00:00.0000" restrictedStatus="open" iris:alternateNetworkCodes="_REALTIME,.UNRESTRICTED,_US-REGIONAL,.VOLCANO">
+    <Latitude>51.93147</Latitude>
+    <Longitude>-177.1275</Longitude>
+    <Elevation>203.0</Elevation>
+    <Site>
+     <Name>North Cape, Kanaga Volcano, Alaska</Name>
+    </Site>
+    <CreationDate>1999-09-15T00:00:00.0000</CreationDate>
+    <TotalNumberChannels>11</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+   <Station code="KIRH" startDate="1999-09-03T00:00:00.0000" restrictedStatus="open" iris:alternateNetworkCodes="_REALTIME,.UNRESTRICTED,_US-REGIONAL,.VOLCANO">
+    <Latitude>51.89981</Latitude>
+    <Longitude>-177.0937</Longitude>
+    <Elevation>321.0</Elevation>
+    <Site>
+     <Name>Round Head, Kanaga Volcano, Alaska</Name>
+    </Site>
+    <CreationDate>1999-09-03T00:00:00.0000</CreationDate>
+    <TotalNumberChannels>9</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+   <Station code="KIWB" startDate="1999-09-03T00:00:00.0000" restrictedStatus="open" iris:alternateNetworkCodes="_REALTIME,.UNRESTRICTED,_US-REGIONAL,.VOLCANO">
+    <Latitude>51.853</Latitude>
+    <Longitude>-177.15094</Longitude>
+    <Elevation>234.0</Elevation>
+    <Site>
+     <Name>Westway Bight, Kanaga Volcano, Alaska</Name>
+    </Site>
+    <CreationDate>1999-09-03T00:00:00.0000</CreationDate>
+    <TotalNumberChannels>7</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+   <Station code="TACS" startDate="2003-08-28T00:00:00.0000" endDate="2019-07-21T00:00:00.0000" restrictedStatus="open" iris:alternateNetworkCodes=".UNRESTRICTED,_US-REGIONAL,.VOLCANO">
+    <Latitude>51.8621</Latitude>
+    <Longitude>-178.1414</Longitude>
+    <Elevation>918.0</Elevation>
+    <Site>
+     <Name>Cape Sajaka, Tanaga Volcano, Alaska</Name>
+    </Site>
+    <CreationDate>2003-08-28T00:00:00.0000</CreationDate>
+    <TotalNumberChannels>3</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+   <Station code="TAFL" startDate="2003-08-28T00:00:00.0000" restrictedStatus="open" iris:alternateNetworkCodes="_REALTIME,.UNRESTRICTED,_US-REGIONAL,.VOLCANO">
+    <Latitude>51.7555</Latitude>
+    <Longitude>-177.8998</Longitude>
+    <Elevation>186.0</Elevation>
+    <Site>
+     <Name>Flats, Tanaga Volcano, Alaska</Name>
+    </Site>
+    <CreationDate>2003-08-28T00:00:00.0000</CreationDate>
+    <TotalNumberChannels>7</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+   <Station code="TAFP" startDate="2003-08-27T00:00:00.0000" restrictedStatus="open" iris:alternateNetworkCodes="_REALTIME,.UNRESTRICTED,_US-REGIONAL,.VOLCANO">
+    <Latitude>51.899</Latitude>
+    <Longitude>-177.9853</Longitude>
+    <Elevation>440.0</Elevation>
+    <Site>
+     <Name>Falls Point, Tanaga Volcano, Alaska</Name>
+    </Site>
+    <CreationDate>2003-08-27T00:00:00.0000</CreationDate>
+    <TotalNumberChannels>16</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+   <Station code="TANO" startDate="2003-08-24T00:00:00.0000" restrictedStatus="open" iris:alternateNetworkCodes="_REALTIME,.UNRESTRICTED,_US-REGIONAL,.VOLCANO">
+    <Latitude>51.9146</Latitude>
+    <Longitude>-178.1228</Longitude>
+    <Elevation>269.0</Elevation>
+    <Site>
+     <Name>North, Tanaga Volcano, Alaska</Name>
+    </Site>
+    <CreationDate>2003-08-24T00:00:00.0000</CreationDate>
+    <TotalNumberChannels>7</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+   <Station code="TAPA" startDate="2003-08-27T00:00:00.0000" restrictedStatus="open" iris:alternateNetworkCodes="_REALTIME,.UNRESTRICTED,_US-REGIONAL,.VOLCANO">
+    <Latitude>51.8144</Latitude>
+    <Longitude>-177.8148</Longitude>
+    <Elevation>640.0</Elevation>
+    <Site>
+     <Name>Point Aries, Tanaga Volcano, Alaska</Name>
+    </Site>
+    <CreationDate>2003-08-27T00:00:00.0000</CreationDate>
+    <TotalNumberChannels>9</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+   <Station code="TASE" startDate="2003-08-24T00:00:00.0000" restrictedStatus="open" iris:alternateNetworkCodes="_REALTIME,.UNRESTRICTED,_US-REGIONAL,.VOLCANO">
+    <Latitude>51.834935</Latitude>
+    <Longitude>-178.03717</Longitude>
+    <Elevation>686.0</Elevation>
+    <Site>
+     <Name>Southeast, Tanaga Volcano, Alaska</Name>
+    </Site>
+    <CreationDate>2003-08-24T00:00:00.0000</CreationDate>
+    <TotalNumberChannels>7</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+   <Station code="TASO" startDate="2019-07-11T00:00:00.0000" restrictedStatus="open" iris:alternateNetworkCodes="_REALTIME,.UNRESTRICTED">
+    <Latitude>51.85355</Latitude>
+    <Longitude>-178.1453</Longitude>
+    <Elevation>690.0</Elevation>
+    <Site>
+     <Name>South, Tanaga Volcano, Alaska</Name>
+    </Site>
+    <CreationDate>2019-07-11T00:00:00.0000</CreationDate>
+    <TotalNumberChannels>3</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+  </Network>
+  <Network code="IU" startDate="1988-01-01T00:00:00.0000" restrictedStatus="open">
+   <Description>Global Seismograph Network (GSN - IRIS/USGS) (GSN)</Description>
+   <Identifier type="DOI">10.7914/SN/IU
+   </Identifier>
+   <TotalNumberStations>127</TotalNumberStations>
+   <SelectedNumberStations>1</SelectedNumberStations>
+   <Station code="ADK" startDate="1993-09-21T00:00:00.0000" restrictedStatus="open" iris:alternateNetworkCodes="_ANSS-BB,.EARTHSCOPE,_FDSN,_FDSN-ALL,.GREG,_GSN,_GSN-BROADBAND,_REALTIME,_STS-1,.UNRESTRICTED,_US-ALL,_US-REF">
+    <Description>(GSN) Global Seismograph Network (IRIS/USGS)</Description>
+    <Latitude>51.8823</Latitude>
+    <Longitude>-176.6842</Longitude>
+    <Elevation>130.0</Elevation>
+    <Site>
+     <Name>Adak, Aleutian Islands, Alaska</Name>
+     <Description>WWSN vault</Description>
+     <Region>Adak, Aleutian Islands, Alaska</Region>
+    </Site>
+    <CreationDate>1993-09-21T00:00:00.0000</CreationDate>
+    <TotalNumberChannels>309</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+  </Network>
+  <Network code="SY" startDate="1900-01-01T00:00:00.0000" restrictedStatus="open">
+   <Description>Synthetic Seismograms ()</Description>
+   <TotalNumberStations>6195</TotalNumberStations>
+   <SelectedNumberStations>20</SelectedNumberStations>
+   <Station code="AAAA" startDate="1900-01-01T00:00:00.0000" restrictedStatus="open" iris:alternateNetworkCodes=".UNRESTRICTED">
+    <Latitude>51.882301</Latitude>
+    <Longitude>-176.684204</Longitude>
+    <Elevation>120.0</Elevation>
+    <Site>
+     <Name>AAAA synthetic</Name>
+    </Site>
+    <CreationDate>1900-01-01T00:00:00.0000</CreationDate>
+    <TotalNumberChannels>6</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+   <Station code="ADAG" startDate="1900-01-01T00:00:00.0000" restrictedStatus="open" iris:alternateNetworkCodes=".UNRESTRICTED">
+    <Latitude>51.98024</Latitude>
+    <Longitude>-176.601761</Longitude>
+    <Elevation>281.0</Elevation>
+    <Site>
+     <Name>ADAG synthetic</Name>
+    </Site>
+    <CreationDate>1900-01-01T00:00:00.0000</CreationDate>
+    <TotalNumberChannels>6</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+   <Station code="ADK" startDate="1900-01-01T00:00:00.0000" restrictedStatus="open" iris:alternateNetworkCodes=".UNRESTRICTED">
+    <Latitude>51.882301</Latitude>
+    <Longitude>-176.684204</Longitude>
+    <Elevation>130.0</Elevation>
+    <Site>
+     <Name>ADK synthetic</Name>
+    </Site>
+    <CreationDate>1900-01-01T00:00:00.0000</CreationDate>
+    <TotalNumberChannels>6</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+   <Station code="ETKA" startDate="1900-01-01T00:00:00.0000" restrictedStatus="open" iris:alternateNetworkCodes=".UNRESTRICTED">
+    <Latitude>51.860802</Latitude>
+    <Longitude>-176.407898</Longitude>
+    <Elevation>290.0</Elevation>
+    <Site>
+     <Name>ETKA synthetic</Name>
+    </Site>
+    <CreationDate>1900-01-01T00:00:00.0000</CreationDate>
+    <TotalNumberChannels>6</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+   <Station code="GAEA" startDate="1900-01-01T00:00:00.0000" restrictedStatus="open" iris:alternateNetworkCodes=".UNRESTRICTED">
+    <Latitude>51.781898</Latitude>
+    <Longitude>-178.748795</Longitude>
+    <Elevation>326.0</Elevation>
+    <Site>
+     <Name>GAEA synthetic</Name>
+    </Site>
+    <CreationDate>1900-01-01T00:00:00.0000</CreationDate>
+    <TotalNumberChannels>6</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+   <Station code="GAKI" startDate="1900-01-01T00:00:00.0000" restrictedStatus="open" iris:alternateNetworkCodes=".UNRESTRICTED">
+    <Latitude>51.553398</Latitude>
+    <Longitude>-178.813995</Longitude>
+    <Elevation>99.0</Elevation>
+    <Site>
+     <Name>GAKI synthetic</Name>
+    </Site>
+    <CreationDate>1900-01-01T00:00:00.0000</CreationDate>
+    <TotalNumberChannels>6</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+   <Station code="GALA" startDate="1900-01-01T00:00:00.0000" restrictedStatus="open" iris:alternateNetworkCodes=".UNRESTRICTED">
+    <Latitude>51.760601</Latitude>
+    <Longitude>-178.773499</Longitude>
+    <Elevation>315.0</Elevation>
+    <Site>
+     <Name>GALA synthetic</Name>
+    </Site>
+    <CreationDate>1900-01-01T00:00:00.0000</CreationDate>
+    <TotalNumberChannels>6</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+   <Station code="GANE" startDate="1900-01-01T00:00:00.0000" restrictedStatus="open" iris:alternateNetworkCodes=".UNRESTRICTED">
+    <Latitude>51.817799</Latitude>
+    <Longitude>-178.778702</Longitude>
+    <Elevation>325.0</Elevation>
+    <Site>
+     <Name>GANE synthetic</Name>
+    </Site>
+    <CreationDate>1900-01-01T00:00:00.0000</CreationDate>
+    <TotalNumberChannels>6</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+   <Station code="GANO" startDate="1900-01-01T00:00:00.0000" restrictedStatus="open" iris:alternateNetworkCodes=".UNRESTRICTED">
+    <Latitude>51.819199</Latitude>
+    <Longitude>-178.805801</Longitude>
+    <Elevation>451.0</Elevation>
+    <Site>
+     <Name>GANO synthetic</Name>
+    </Site>
+    <CreationDate>1900-01-01T00:00:00.0000</CreationDate>
+    <TotalNumberChannels>6</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+   <Station code="GASW" startDate="1900-01-01T00:00:00.0000" restrictedStatus="open" iris:alternateNetworkCodes=".UNRESTRICTED">
+    <Latitude>51.777802</Latitude>
+    <Longitude>-178.856598</Longitude>
+    <Elevation>248.0</Elevation>
+    <Site>
+     <Name>GASW synthetic</Name>
+    </Site>
+    <CreationDate>1900-01-01T00:00:00.0000</CreationDate>
+    <TotalNumberChannels>6</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+   <Station code="KICM" startDate="1900-01-01T00:00:00.0000" restrictedStatus="open" iris:alternateNetworkCodes=".UNRESTRICTED">
+    <Latitude>51.917801</Latitude>
+    <Longitude>-177.197296</Longitude>
+    <Elevation>183.0</Elevation>
+    <Site>
+     <Name>KICM synthetic</Name>
+    </Site>
+    <CreationDate>1900-01-01T00:00:00.0000</CreationDate>
+    <TotalNumberChannels>6</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+   <Station code="KIKV" startDate="1900-01-01T00:00:00.0000" restrictedStatus="open" iris:alternateNetworkCodes=".UNRESTRICTED">
+    <Latitude>51.877701</Latitude>
+    <Longitude>-177.172394</Longitude>
+    <Elevation>411.0</Elevation>
+    <Site>
+     <Name>KIKV synthetic</Name>
+    </Site>
+    <CreationDate>1900-01-01T00:00:00.0000</CreationDate>
+    <TotalNumberChannels>6</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+   <Station code="KIMD" startDate="1900-01-01T00:00:00.0000" restrictedStatus="open" iris:alternateNetworkCodes=".UNRESTRICTED">
+    <Latitude>51.760502</Latitude>
+    <Longitude>-177.236893</Longitude>
+    <Elevation>183.0</Elevation>
+    <Site>
+     <Name>KIMD synthetic</Name>
+    </Site>
+    <CreationDate>1900-01-01T00:00:00.0000</CreationDate>
+    <TotalNumberChannels>6</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+   <Station code="KINC" startDate="1900-01-01T00:00:00.0000" restrictedStatus="open" iris:alternateNetworkCodes=".UNRESTRICTED">
+    <Latitude>51.930302</Latitude>
+    <Longitude>-177.129593</Longitude>
+    <Elevation>198.0</Elevation>
+    <Site>
+     <Name>KINC synthetic</Name>
+    </Site>
+    <CreationDate>1900-01-01T00:00:00.0000</CreationDate>
+    <TotalNumberChannels>6</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+   <Station code="KIRH" startDate="1900-01-01T00:00:00.0000" restrictedStatus="open" iris:alternateNetworkCodes=".UNRESTRICTED">
+    <Latitude>51.899811</Latitude>
+    <Longitude>-177.093704</Longitude>
+    <Elevation>321.0</Elevation>
+    <Site>
+     <Name>KIRH synthetic</Name>
+    </Site>
+    <CreationDate>1900-01-01T00:00:00.0000</CreationDate>
+    <TotalNumberChannels>6</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+   <Station code="KIWB" startDate="1900-01-01T00:00:00.0000" restrictedStatus="open" iris:alternateNetworkCodes=".UNRESTRICTED">
+    <Latitude>51.852001</Latitude>
+    <Longitude>-177.152802</Longitude>
+    <Elevation>244.0</Elevation>
+    <Site>
+     <Name>KIWB synthetic</Name>
+    </Site>
+    <CreationDate>1900-01-01T00:00:00.0000</CreationDate>
+    <TotalNumberChannels>6</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+   <Station code="TAFL" startDate="1900-01-01T00:00:00.0000" restrictedStatus="open" iris:alternateNetworkCodes=".UNRESTRICTED">
+    <Latitude>51.755501</Latitude>
+    <Longitude>-177.899796</Longitude>
+    <Elevation>186.0</Elevation>
+    <Site>
+     <Name>TAFL synthetic</Name>
+    </Site>
+    <CreationDate>1900-01-01T00:00:00.0000</CreationDate>
+    <TotalNumberChannels>6</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+   <Station code="TAFP" startDate="1900-01-01T00:00:00.0000" restrictedStatus="open" iris:alternateNetworkCodes=".UNRESTRICTED">
+    <Latitude>51.898998</Latitude>
+    <Longitude>-177.985306</Longitude>
+    <Elevation>440.0</Elevation>
+    <Site>
+     <Name>TAFP synthetic</Name>
+    </Site>
+    <CreationDate>1900-01-01T00:00:00.0000</CreationDate>
+    <TotalNumberChannels>6</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+   <Station code="TANO" startDate="1900-01-01T00:00:00.0000" restrictedStatus="open" iris:alternateNetworkCodes=".UNRESTRICTED">
+    <Latitude>51.9146</Latitude>
+    <Longitude>-178.122803</Longitude>
+    <Elevation>269.0</Elevation>
+    <Site>
+     <Name>TANO synthetic</Name>
+    </Site>
+    <CreationDate>1900-01-01T00:00:00.0000</CreationDate>
+    <TotalNumberChannels>6</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+   <Station code="TASE" startDate="1900-01-01T00:00:00.0000" restrictedStatus="open" iris:alternateNetworkCodes=".UNRESTRICTED">
+    <Latitude>51.8339</Latitude>
+    <Longitude>-178.039001</Longitude>
+    <Elevation>682.0</Elevation>
+    <Site>
+     <Name>TASE synthetic</Name>
+    </Site>
+    <CreationDate>1900-01-01T00:00:00.0000</CreationDate>
+    <TotalNumberChannels>6</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+  </Network>
+  <Network code="YM" startDate="2020-01-01T00:00:00.0000" endDate="2020-12-31T23:59:59.9999" restrictedStatus="open">
+   <Description>Andreanoff Active-Source OBS Experiment (Andreanoff)</Description>
+   <Identifier type="DOI">10.7914/SN/YM_2020
+   </Identifier>
+   <TotalNumberStations>47</TotalNumberStations>
+   <SelectedNumberStations>11</SelectedNumberStations>
+   <Station code="S120" startDate="2020-09-06T00:00:00.0000" endDate="2020-09-15T00:00:08.9990" restrictedStatus="open" iris:alternateNetworkCodes="_OBSIC,_OBSIP,.UNRESTRICTED">
+    <Latitude>51.999798</Latitude>
+    <Longitude>-176.450975</Longitude>
+    <Elevation>-120.0</Elevation>
+    <Site>
+     <Name>OBS_ID: D55</Name>
+    </Site>
+    <TotalNumberChannels>33</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+   <Station code="S121" startDate="2020-09-06T00:00:00.0000" endDate="2020-09-16T00:00:08.9990" restrictedStatus="open" iris:alternateNetworkCodes="_OBSIC,_OBSIP,.UNRESTRICTED">
+    <Latitude>51.942132</Latitude>
+    <Longitude>-176.884862</Longitude>
+    <Elevation>-403.0</Elevation>
+    <Site>
+     <Name>OBS_ID: D10</Name>
+    </Site>
+    <TotalNumberChannels>33</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+   <Station code="S122" startDate="2020-09-07T00:00:00.0000" endDate="2020-09-16T00:00:08.9990" restrictedStatus="open" iris:alternateNetworkCodes="_OBSIC,_OBSIP,.UNRESTRICTED">
+    <Latitude>51.929997</Latitude>
+    <Longitude>-176.977935</Longitude>
+    <Elevation>-196.0</Elevation>
+    <Site>
+     <Name>OBS_ID: D35</Name>
+    </Site>
+    <TotalNumberChannels>33</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+   <Station code="S123" startDate="2020-09-08T00:00:00.0000" endDate="2020-09-14T23:59:59.9999" restrictedStatus="open" iris:alternateNetworkCodes="_OBSIC,.UNRESTRICTED">
+    <Latitude>51.889031</Latitude>
+    <Longitude>-177.275071</Longitude>
+    <Elevation>-790.0</Elevation>
+    <Site>
+     <Name>SIO OBS ID S123</Name>
+    </Site>
+    <CreationDate>2020-09-08T00:00:00.0000</CreationDate>
+    <TotalNumberChannels>4</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+   <Station code="S124" startDate="2020-09-09T00:00:00.0000" endDate="2020-09-14T23:59:59.9999" restrictedStatus="open" iris:alternateNetworkCodes="_OBSIC,.UNRESTRICTED">
+    <Latitude>51.88071</Latitude>
+    <Longitude>-177.33058</Longitude>
+    <Elevation>-1209.0</Elevation>
+    <Site>
+     <Name>SIO OBS ID S124</Name>
+    </Site>
+    <CreationDate>2020-09-09T00:00:00.0000</CreationDate>
+    <TotalNumberChannels>4</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+   <Station code="S125" startDate="2020-09-09T00:00:00.0000" endDate="2020-09-14T23:59:59.9999" restrictedStatus="open" iris:alternateNetworkCodes="_OBSIC,.UNRESTRICTED">
+    <Latitude>51.854334</Latitude>
+    <Longitude>-177.509304</Longitude>
+    <Elevation>-453.0</Elevation>
+    <Site>
+     <Name>SIO OBS ID S125</Name>
+    </Site>
+    <CreationDate>2020-09-09T00:00:00.0000</CreationDate>
+    <TotalNumberChannels>4</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+   <Station code="S126" startDate="2020-09-09T00:00:00.0000" endDate="2020-09-14T23:59:59.9999" restrictedStatus="open" iris:alternateNetworkCodes="_OBSIC,.UNRESTRICTED">
+    <Latitude>51.764595</Latitude>
+    <Longitude>-178.147434</Longitude>
+    <Elevation>-122.0</Elevation>
+    <Site>
+     <Name>SIO OBS ID S126</Name>
+    </Site>
+    <CreationDate>2020-09-09T00:00:00.0000</CreationDate>
+    <TotalNumberChannels>4</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+   <Station code="S127" startDate="2020-09-09T00:00:00.0000" endDate="2020-09-14T23:59:59.9999" restrictedStatus="open" iris:alternateNetworkCodes="_OBSIC,.UNRESTRICTED">
+    <Latitude>51.742511</Latitude>
+    <Longitude>-178.291314</Longitude>
+    <Elevation>-575.0</Elevation>
+    <Site>
+     <Name>SIO OBS ID S127</Name>
+    </Site>
+    <CreationDate>2020-09-09T00:00:00.0000</CreationDate>
+    <TotalNumberChannels>4</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+   <Station code="S128" startDate="2020-09-07T00:00:00.0000" endDate="2020-09-16T00:00:08.9990" restrictedStatus="open" iris:alternateNetworkCodes="_OBSIC,_OBSIP,.UNRESTRICTED">
+    <Latitude>51.712293</Latitude>
+    <Longitude>-178.488425</Longitude>
+    <Elevation>-963.0</Elevation>
+    <Site>
+     <Name>OBS_ID: D60</Name>
+    </Site>
+    <TotalNumberChannels>33</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+   <Station code="S129" startDate="2020-09-07T00:00:00.0000" endDate="2020-09-16T00:00:08.9990" restrictedStatus="open" iris:alternateNetworkCodes="_OBSIC,_OBSIP,.UNRESTRICTED">
+    <Latitude>51.683208</Latitude>
+    <Longitude>-178.685538</Longitude>
+    <Elevation>-1041.0</Elevation>
+    <Site>
+     <Name>OBS_ID: D26</Name>
+    </Site>
+    <TotalNumberChannels>33</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+   <Station code="S130" startDate="2020-09-07T00:00:00.0000" endDate="2020-09-16T00:00:08.9990" restrictedStatus="open" iris:alternateNetworkCodes="_OBSIC,_OBSIP,.UNRESTRICTED">
+    <Latitude>51.651008</Latitude>
+    <Longitude>-178.896225</Longitude>
+    <Elevation>-624.0</Elevation>
+    <Site>
+     <Name>OBS_ID: D18</Name>
+    </Site>
+    <TotalNumberChannels>33</TotalNumberChannels>
+    <SelectedNumberChannels>0</SelectedNumberChannels>
+   </Station>
+  </Network>
+ </FDSNStationXML>

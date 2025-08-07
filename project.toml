@@ -1,0 +1,56 @@
+# =============================================================================
+# pyproject.toml
+# =============================================================================
+"""
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nllpy"
+version = "0.1.0"
+description = "Python wrapper for generating NonLinLoc control files"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Jay Wellik", email = "jwellik@usgs.gov"},
+]
+keywords = ["seismology", "earthquake", "volcano", "location", "nlloc"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Physics",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+]
+
+dependencies = [
+    "numpy>=1.20.0",
+    "lxml>=4.6.0",
+]
+
+[project.optional-dependencies]
+obspy = ["obspy>=1.3.0"]
+dev = ["pytest>=6.0", "black", "flake8", "mypy"]
+
+[project.urls]
+Homepage = "https://github.com/jwellik/nllpy"
+Documentation = "https://nllpy.readthedocs.io/"
+Repository = "https://github.com/jwellik/nllpy"
+"Bug Tracker" = "https://github.com/jwellik/nllpy/issues"
+
+[project.scripts]
+nllpy = "nllpy.cli.main:main"
+nll-gtsrce = "nllpy.cli.main:gtsrce_command"
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+"""

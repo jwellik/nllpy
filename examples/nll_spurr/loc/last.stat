@@ -1,0 +1,60 @@
+
+#Average Phase Residuals (CalcResidual)  RMS_Max: 9999.000000  NRdgs_Min: -1  Gap_Max: 9999.000000  P_Res_Max: 1.000000  S_Res_Max: 1.000000  Ell_Len3_Max: 9999.900000  Hypo_Depth_Min: -9999.900000  Hypo_Depth_Max: 9999.900000  Hypo_Dist_Max: 1000000000000000019884624838656.000000
+#         ID      Phase   Nres      AveRes       StdDev       ResMin       ResMax     ignored
+LOCDELAY  SPBG P 10       -0.034500    0.152892     -0.485266    0.050496     0
+LOCDELAY  SPBG S 8        -0.112246    0.288977     -0.874008    0.055689     0
+LOCDELAY  SPBL P 3        0.002498     0.018946     -0.019356    0.026850     0
+LOCDELAY  SPBL S 2        -0.058202    0.058624     -0.116826    0.000423     0
+LOCDELAY  SPCG P 10       -0.173479    0.266084     -0.622743    0.128355     0
+LOCDELAY  SPCG S 8        -0.143486    0.361069     -0.918479    0.353139     0
+LOCDELAY  SPCL P 9        -0.015577    0.023725     -0.057744    0.012895     0
+LOCDELAY  SPCL S 7        0.024307     0.044384     -0.027218    0.123530     0
+LOCDELAY  SPCN P 6        0.266608     0.265684     -0.019993    0.589023     0
+LOCDELAY  SPCN S 2        0.093210     0.075899     0.017310     0.169109     0
+LOCDELAY  SPCP P 7        0.109734     0.146079     0.000728     0.437687     0
+LOCDELAY  SPCP S 6        -0.014676    0.023887     -0.064792    0.007602     0
+
+#Total Phase Corrections (CalcResidual + InputDelay)  RMS_Max: 9999.000000  NRdgs_Min: -1  Gap_Max: 9999.000000  P_Res_Max: 1.000000  S_Res_Max: 1.000000  Ell_Len3_Max: 9999.900000  Hypo_Depth_Min: -9999.900000  Hypo_Depth_Max: 9999.900000  Hypo_Dist_Max: 1000000000000000019884624838656.000000
+#         ID      Phase   Nres      TotCorr      StdDev
+LOCDELAY  SPBG P 10       -0.034500    0.152892    
+LOCDELAY  SPBG S 8        -0.112246    0.288977    
+LOCDELAY  SPBL P 3        0.002498     0.018946    
+LOCDELAY  SPBL S 2        -0.058202    0.058624    
+LOCDELAY  SPCG P 10       -0.173479    0.266084    
+LOCDELAY  SPCG S 8        -0.143486    0.361069    
+LOCDELAY  SPCL P 9        -0.015577    0.023725    
+LOCDELAY  SPCL S 7        0.024307     0.044384    
+LOCDELAY  SPCN P 6        0.266608     0.265684    
+LOCDELAY  SPCN S 2        0.093210     0.075899    
+LOCDELAY  SPCP P 7        0.109734     0.146079    
+LOCDELAY  SPCP S 6        -0.014676    0.023887    
+
+#Average Phase Residuals PDF (CalcPDFResidual)  RMS_Max: 9999.000000  NRdgs_Min: -1  Gap_Max: 9999.000000  P_Res_Max: 1.000000  S_Res_Max: 1.000000  Ell_Len3_Max: 9999.900000  Hypo_Depth_Min: -9999.900000  Hypo_Depth_Max: 9999.900000  Hypo_Dist_Max: 1000000000000000019884624838656.000000
+#         ID      Phase   Nres      AveRes       StdDev       ResMin       ResMax     ignored
+LOCDELAY  SPBG P 0        0.000000     -1.000000    -0.485266    0.050496     0
+LOCDELAY  SPBG S 0        0.000000     -1.000000    -0.874008    0.055689     0
+LOCDELAY  SPBL P 0        0.000000     -1.000000    -0.019356    0.026850     0
+LOCDELAY  SPBL S 0        0.000000     -1.000000    -0.116826    0.000423     0
+LOCDELAY  SPCG P 0        0.000000     -1.000000    -0.622743    0.128355     0
+LOCDELAY  SPCG S 0        0.000000     -1.000000    -0.918479    0.353139     0
+LOCDELAY  SPCL P 0        0.000000     -1.000000    -0.057744    0.012895     0
+LOCDELAY  SPCL S 0        0.000000     -1.000000    -0.027218    0.123530     0
+LOCDELAY  SPCN P 0        0.000000     -1.000000    -0.019993    0.589023     0
+LOCDELAY  SPCN S 0        0.000000     -1.000000    0.017310     0.169109     0
+LOCDELAY  SPCP P 0        0.000000     -1.000000    0.000728     0.437687     0
+LOCDELAY  SPCP S 0        0.000000     -1.000000    -0.064792    0.007602     0
+
+#Total Phase Corrections PDF (CalcPDFResidual + InputDelay)  RMS_Max: 9999.000000  NRdgs_Min: -1  Gap_Max: 9999.000000  P_Res_Max: 1.000000  S_Res_Max: 1.000000  Ell_Len3_Max: 9999.900000  Hypo_Depth_Min: -9999.900000  Hypo_Depth_Max: 9999.900000  Hypo_Dist_Max: 1000000000000000019884624838656.000000
+#         ID      Phase   Nres      TotCorr      StdDev
+LOCDELAY  SPBG P 0        0.000000     -1.000000   
+LOCDELAY  SPBG S 0        0.000000     -1.000000   
+LOCDELAY  SPBL P 0        0.000000     -1.000000   
+LOCDELAY  SPBL S 0        0.000000     -1.000000   
+LOCDELAY  SPCG P 0        0.000000     -1.000000   
+LOCDELAY  SPCG S 0        0.000000     -1.000000   
+LOCDELAY  SPCL P 0        0.000000     -1.000000   
+LOCDELAY  SPCL S 0        0.000000     -1.000000   
+LOCDELAY  SPCN P 0        0.000000     -1.000000   
+LOCDELAY  SPCN S 0        0.000000     -1.000000   
+LOCDELAY  SPCP P 0        0.000000     -1.000000   
+LOCDELAY  SPCP S 0        0.000000     -1.000000   

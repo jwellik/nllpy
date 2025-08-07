@@ -1,0 +1,220 @@
+NLLOC "./loc/volcano.20241014.003337.grid0" "LOCATED" "Location completed."
+PUBLIC_ID None
+SIGNATURE "MARN+VDAP   obs:./obs/210046644.obs   NLLoc:v7.00.13(17Jan2022)   run:03Aug2025 05h11m24"
+COMMENT "Santa Ana, El Salvador"
+GRID  100 100 30  -50 -50 -3  1 1 1 PROB_DENSITY
+SEARCH OCTREE nInitial 4400 nEvaluated 20032 smallestNodeSide 0.038672/0.038672/0.020597 oct_tree_integral 4.050889e-01 scatter_volume 4.050889e-01
+HYPOCENTER  x 2.4584 y -1.91152 z 5.64027  OT 35.7995  ix -1 iy -1 iz -1 MAXIMUM_LIKELIHOOD
+GEOGRAPHIC  OT 2024 10 14  00 33 35.799468  Lat 61.281848 Long -152.209245 Depth 5.640270
+QUALITY  Pmax 6.99649e+24 MFmin 24.3193 MFmax 24.5482 RMS 0.0038427 Nphs 11 Gap 190.161 Dist 3.41254 Mamp -9.90 0 Mdur -9.90 0
+VPVSRATIO  VpVsRatio 1.71668  Npair 5  Diff 1.6
+STATISTICS  ExpectX 1.719251 Y -1.429296 Z 4.424218  CovXX 1.71153 XY -1.41692 XZ 2.32482 YY 1.37612 YZ -1.70189 ZZ 3.54486 EllAz1  241.229 Dip1  19.0583 Len1  0.246662 Az2  345.688 Dip2  35.8583 Len2  1.28548 Len3  4.658265e+00
+STAT_GEOG  ExpectLat 61.286175 Long -152.223030 Depth 4.424218
+TRANSFORM  SDC LatOrig 61.299000  LongOrig -152.255100  RotCW 0.000000
+QML_OriginQuality  assocPhCt 19  usedPhCt 11  assocStaCt -1  usedStaCt 6  depthPhCt -1  stdErr 0.0038427  azGap 190.161  secAzGap 190.161  gtLevel -  minDist 3.41254 maxDist 11.8971 medDist 9.57411
+QML_OriginUncertainty  horUnc -1  minHorUnc 0.518785  maxHorUnc 2.6139  azMaxHorUnc 131.625
+QML_ConfidenceEllipsoid  semiMajorAxisLength 4.65827  semiMinorAxisLength 0.246662  semiIntermediateAxisLength 1.28548  majorAxisPlunge 0  majorAxisAzimuth 0  majorAxisRotation 158.49
+FOCALMECH  Hyp  61.281848 -152.209245 5.640270 Mech  0 0 0 mf  0 nObs -1
+DIFFERENTIAL  Nhyp 0
+END_NLLOC
+
+NLLOC "./loc/volcano.20241014.004634.grid0" "LOCATED" "Location completed."
+PUBLIC_ID None
+SIGNATURE "MARN+VDAP   obs:./obs/210046654.obs   NLLoc:v7.00.13(17Jan2022)   run:03Aug2025 05h11m24"
+COMMENT "Santa Ana, El Salvador"
+GRID  100 100 30  -50 -50 -3  1 1 1 PROB_DENSITY
+SEARCH OCTREE nInitial 4400 nEvaluated 20000 smallestNodeSide 0.077344/0.077344/0.041193 oct_tree_integral 2.242741e+00 scatter_volume 2.238707e+00
+HYPOCENTER  x 1.39492 y 1.54961 z -1.00213  OT 31.7116  ix -1 iy -1 iz -1 MAXIMUM_LIKELIHOOD
+GEOGRAPHIC  OT 2024 10 14  00 46 31.711590  Lat 61.312905 Long -152.229068 Depth -1.002131
+QUALITY  Pmax 1.17162e+16 MFmin 16.4332 MFmax 16.9448 RMS 0.0597741 Nphs 8 Gap 230.283 Dist 9.7398 Mamp -9.90 0 Mdur -9.90 0
+VPVSRATIO  VpVsRatio 1.80527  Npair 4  Diff 1.16
+STATISTICS  ExpectX 0.089640 Y 1.540895 Z -0.030364  CovXX 19.0601 XY 1.06421 XZ -5.05158 YY 1.24664 YZ 0.482089 ZZ 4.33892 EllAz1  350.672 Dip1  -20.5651 Len1  1.77103 Az2  213.954 Dip2  -62.735 Len2  3.30318 Len3  8.541182e+00
+STAT_GEOG  ExpectLat 61.312827 Long -152.253427 Depth -0.030364
+TRANSFORM  SDC LatOrig 61.299000  LongOrig -152.255100  RotCW 0.000000
+QML_OriginQuality  assocPhCt 14  usedPhCt 8  assocStaCt -1  usedStaCt 4  depthPhCt -1  stdErr 0.0597741  azGap 230.283  secAzGap 230.283  gtLevel -  minDist 9.7398 maxDist 14.3623 medDist 12.8394
+QML_OriginUncertainty  horUnc -1  minHorUnc 1.64972  maxHorUnc 6.63205  azMaxHorUnc 86.5932
+QML_ConfidenceEllipsoid  semiMajorAxisLength 8.54118  semiMinorAxisLength 1.77103  semiIntermediateAxisLength 3.30318  majorAxisPlunge 0  majorAxisAzimuth 0  majorAxisRotation 246.635
+FOCALMECH  Hyp  61.312905 -152.229068 -1.002131 Mech  0 0 0 mf  0 nObs -1
+DIFFERENTIAL  Nhyp 0
+END_NLLOC
+
+NLLOC "./loc/volcano.20241014.060344.grid0" "LOCATED" "Location completed."
+PUBLIC_ID None
+SIGNATURE "MARN+VDAP   obs:./obs/210046679.obs   NLLoc:v7.00.13(17Jan2022)   run:03Aug2025 05h11m24"
+COMMENT "Santa Ana, El Salvador"
+GRID  100 100 30  -50 -50 -3  1 1 1 PROB_DENSITY
+SEARCH OCTREE nInitial 4400 nEvaluated 20000 smallestNodeSide 0.309375/0.309375/0.164773 oct_tree_integral 1.085167e+02 scatter_volume 1.085167e+02
+HYPOCENTER  x -34.6859 y 11.1016 z 9.1108  OT 42.7618  ix -1 iy -1 iz -1 MAXIMUM_LIKELIHOOD
+GEOGRAPHIC  OT 2024 10 14  06 03 42.761798  Lat 61.398615 Long -152.903279 Depth 9.110795
+QUALITY  Pmax 4.43702e+07 MFmin 8.85747 MFmax 11.6953 RMS 0.00150223 Nphs 5 Gap 308.929 Dist 2.51576 Mamp -9.90 0 Mdur -9.90 0
+VPVSRATIO  VpVsRatio 0.5  Npair 2  Diff 2.02
+STATISTICS  ExpectX 11.066766 Y 3.713190 Z 11.181648  CovXX 795.287 XY -109.571 XZ 87.5091 YY 180.548 YZ -6.11724 ZZ 45.2595 EllAz1  67.7689 Dip1  -82.4747 Len1  11.0938 Az2  189.281 Dip2  -3.94975 Len2  23.9295 Len3  5.393303e+01
+STAT_GEOG  ExpectLat 61.332319 Long -152.048512 Depth 11.181648
+TRANSFORM  SDC LatOrig 61.299000  LongOrig -152.255100  RotCW 0.000000
+QML_OriginQuality  assocPhCt 9  usedPhCt 5  assocStaCt -1  usedStaCt 3  depthPhCt -1  stdErr 0.00150223  azGap 308.929  secAzGap 360  gtLevel -  minDist 2.51576 maxDist 32.3825 medDist 32.3825
+QML_OriginUncertainty  horUnc -1  minHorUnc 19.2791  maxHorUnc 43.2751  azMaxHorUnc 99.81
+QML_ConfidenceEllipsoid  semiMajorAxisLength 53.933  semiMinorAxisLength 11.0938  semiIntermediateAxisLength 23.9295  majorAxisPlunge 0  majorAxisAzimuth 0  majorAxisRotation 276.972
+FOCALMECH  Hyp  61.398615 -152.903279 9.110795 Mech  0 0 0 mf  0 nObs -1
+DIFFERENTIAL  Nhyp 0
+END_NLLOC
+
+NLLOC "./loc/volcano.20241014.093830.grid0" "LOCATED" "Location completed."
+PUBLIC_ID None
+SIGNATURE "MARN+VDAP   obs:./obs/210046694.obs   NLLoc:v7.00.13(17Jan2022)   run:03Aug2025 05h11m24"
+COMMENT "Santa Ana, El Salvador"
+GRID  100 100 30  -50 -50 -3  1 1 1 PROB_DENSITY
+SEARCH OCTREE nInitial 4400 nEvaluated 20008 smallestNodeSide 0.154688/0.154688/0.082386 oct_tree_integral 1.371486e+01 scatter_volume 1.371486e+01
+HYPOCENTER  x 13.8086 y 19.9961 z -2.95881  OT 28.341  ix -1 iy -1 iz -1 MAXIMUM_LIKELIHOOD
+GEOGRAPHIC  OT 2024 10 14  09 38 28.341008  Lat 61.478426 Long -151.996729 Depth -2.958807
+QUALITY  Pmax 1.72944e+10 MFmin 10.0647 MFmax 12.2765 RMS 0.00450803 Nphs 6 Gap 324.305 Dist 20.8983 Mamp -9.90 0 Mdur -9.90 0
+VPVSRATIO  VpVsRatio 0.5  Npair 2  Diff 2.04
+STATISTICS  ExpectX 18.853045 Y 12.198636 Z 5.514576  CovXX 161.927 XY -18.972 XZ 18.9812 YY 140.741 YZ -45.0305 ZZ 59.3284 EllAz1  168.2 Dip1  -66.5712 Len1  11.6647 Az2  225.168 Dip2  13.2903 Len2  21.9706 Len3  2.567249e+01
+STAT_GEOG  ExpectLat 61.408459 Long -151.902736 Depth 5.514576
+TRANSFORM  SDC LatOrig 61.299000  LongOrig -152.255100  RotCW 0.000000
+QML_OriginQuality  assocPhCt 9  usedPhCt 6  assocStaCt -1  usedStaCt 4  depthPhCt -1  stdErr 0.00450803  azGap 324.305  secAzGap 344.327  gtLevel -  minDist 20.8983 maxDist 31.6387 medDist 30.8687
+QML_OriginUncertainty  horUnc -1  minHorUnc 17.2653  maxHorUnc 19.9511  azMaxHorUnc 120.412
+QML_ConfidenceEllipsoid  semiMajorAxisLength 25.6725  semiMinorAxisLength 11.6647  semiIntermediateAxisLength 21.9706  majorAxisPlunge 0  majorAxisAzimuth 0  majorAxisRotation 275.064
+FOCALMECH  Hyp  61.478426 -151.996729 -2.958807 Mech  0 0 0 mf  0 nObs -1
+DIFFERENTIAL  Nhyp 0
+END_NLLOC
+
+NLLOC "./loc/volcano.20241014.094138.grid0" "LOCATED" "Location completed."
+PUBLIC_ID None
+SIGNATURE "MARN+VDAP   obs:./obs/210046709.obs   NLLoc:v7.00.13(17Jan2022)   run:03Aug2025 05h11m24"
+COMMENT "Santa Ana, El Salvador"
+GRID  100 100 30  -50 -50 -3  1 1 1 PROB_DENSITY
+SEARCH OCTREE nInitial 4400 nEvaluated 20000 smallestNodeSide 0.077344/0.077344/0.041193 oct_tree_integral 2.724144e+00 scatter_volume 2.722844e+00
+HYPOCENTER  x -7.07422 y 8.85859 z 6.43324  OT 34.1183  ix -1 iy -1 iz -1 MAXIMUM_LIKELIHOOD
+GEOGRAPHIC  OT 2024 10 14  09 41 34.118331  Lat 61.378489 Long -152.387254 Depth 6.433239
+QUALITY  Pmax 2.8313e+22 MFmin 21.3451 MFmax 21.6002 RMS 0.0354979 Nphs 10 Gap 206.947 Dist 13.3289 Mamp -9.90 0 Mdur -9.90 0
+VPVSRATIO  VpVsRatio 1.54378  Npair 4  Diff 0.88
+STATISTICS  ExpectX -3.638978 Y 3.262983 Z 12.352031  CovXX 21.3833 XY -33.291 XZ 31.6271 YY 55.2751 YZ -50.6598 ZZ 52.2765 EllAz1  244.51 Dip1  7.48332 Len1  1.79164 Az2  343.376 Dip2  49.5568 Len2  3.35467 Len3  2.099229e+01
+STAT_GEOG  ExpectLat 61.328279 Long -152.323026 Depth 12.352031
+TRANSFORM  SDC LatOrig 61.299000  LongOrig -152.255100  RotCW 0.000000
+QML_OriginQuality  assocPhCt 18  usedPhCt 10  assocStaCt -1  usedStaCt 6  depthPhCt -1  stdErr 0.0354979  azGap 206.947  secAzGap 206.947  gtLevel -  minDist 13.3289 maxDist 27.1657 medDist 20.4694
+QML_OriginUncertainty  horUnc -1  minHorUnc 1.49627  maxHorUnc 13.1938  azMaxHorUnc 148.489
+QML_ConfidenceEllipsoid  semiMajorAxisLength 20.9923  semiMinorAxisLength 1.79164  semiIntermediateAxisLength 3.35467  majorAxisPlunge 0  majorAxisAzimuth 0  majorAxisRotation 171.72
+FOCALMECH  Hyp  61.378489 -152.387254 6.433239 Mech  0 0 0 mf  0 nObs -1
+DIFFERENTIAL  Nhyp 0
+END_NLLOC
+
+NLLOC "./loc/volcano.20241014.140235.grid0" "LOCATED" "Location completed."
+PUBLIC_ID None
+SIGNATURE "MARN+VDAP   obs:./obs/210046759.obs   NLLoc:v7.00.13(17Jan2022)   run:03Aug2025 05h11m24"
+COMMENT "Santa Ana, El Salvador"
+GRID  100 100 30  -50 -50 -3  1 1 1 PROB_DENSITY
+SEARCH OCTREE nInitial 4400 nEvaluated 20016 smallestNodeSide 0.077344/0.077344/0.041193 oct_tree_integral 1.312983e+00 scatter_volume 1.312983e+00
+HYPOCENTER  x -0.0359375 y -1.58281 z -2.25852  OT 34.446  ix -1 iy -1 iz -1 MAXIMUM_LIKELIHOOD
+GEOGRAPHIC  OT 2024 10 14  14 02 34.446019  Lat 61.284797 Long -152.255770 Depth -2.258523
+QUALITY  Pmax 4.74527e+21 MFmin 21.7443 MFmax 22.0472 RMS 0.0332286 Nphs 10 Gap 201.316 Dist 5.79293 Mamp -9.90 0 Mdur -9.90 0
+VPVSRATIO  VpVsRatio 1.7666  Npair 5  Diff 1.98
+STATISTICS  ExpectX 3.105240 Y -4.673622 Z 1.958405  CovXX 6.02575 XY -6.88159 XZ 3.1527 YY 8.53006 YZ -2.29035 ZZ 6.10002 EllAz1  233.071 Dip1  10.7982 Len1  0.597946 Az2  348.077 Dip2  65.7152 Len2  4.11418 Len3  7.458624e+00
+STAT_GEOG  ExpectLat 61.257063 Long -152.197203 Depth 1.958405
+TRANSFORM  SDC LatOrig 61.299000  LongOrig -152.255100  RotCW 0.000000
+QML_OriginQuality  assocPhCt 15  usedPhCt 10  assocStaCt -1  usedStaCt 5  depthPhCt -1  stdErr 0.0332286  azGap 201.316  secAzGap 201.316  gtLevel -  minDist 5.79293 maxDist 12.5092 medDist 10.9186
+QML_OriginUncertainty  horUnc -1  minHorUnc 0.807245  maxHorUnc 5.72946  azMaxHorUnc 140.156
+QML_ConfidenceEllipsoid  semiMajorAxisLength 7.45862  semiMinorAxisLength 0.597946  semiIntermediateAxisLength 4.11418  majorAxisPlunge 0  majorAxisAzimuth 0  majorAxisRotation 166.58
+FOCALMECH  Hyp  61.284797 -152.255770 -2.258523 Mech  0 0 0 mf  0 nObs -1
+DIFFERENTIAL  Nhyp 0
+END_NLLOC
+
+NLLOC "./loc/volcano.20241014.144757.grid0" "LOCATED" "Location completed."
+PUBLIC_ID None
+SIGNATURE "MARN+VDAP   obs:./obs/210046784.obs   NLLoc:v7.00.13(17Jan2022)   run:03Aug2025 05h11m24"
+COMMENT "Santa Ana, El Salvador"
+GRID  100 100 30  -50 -50 -3  1 1 1 PROB_DENSITY
+SEARCH OCTREE nInitial 4400 nEvaluated 20016 smallestNodeSide 0.077344/0.077344/0.041193 oct_tree_integral 1.531416e+00 scatter_volume 1.528065e+00
+HYPOCENTER  x -6.18477 y 2.47773 z 5.21804  OT 55.1142  ix -1 iy -1 iz -1 MAXIMUM_LIKELIHOOD
+GEOGRAPHIC  OT 2024 10 14  14 47 55.114218  Lat 61.321233 Long -152.370533 Depth 5.218040
+QUALITY  Pmax 1.75424e+20 MFmin 19.888 MFmax 20.2583 RMS 0.0613906 Nphs 9 Gap 177.787 Dist 6.92504 Mamp -9.90 0 Mdur -9.90 0
+VPVSRATIO  VpVsRatio 2.3031  Npair 4  Diff 1.8
+STATISTICS  ExpectX -6.087803 Y 1.651925 Z 5.318449  CovXX 0.362012 XY -0.0387334 XZ -0.156298 YY 4.57692 YZ -2.80986 ZZ 2.38414 EllAz1  68.3804 Dip1  28.9906 Len1  0.945974 Az2  308.524 Dip2  41.9382 Len2  1.4214 Len3  4.789074e+00
+STAT_GEOG  ExpectLat 61.313823 Long -152.368710 Depth 5.318449
+TRANSFORM  SDC LatOrig 61.299000  LongOrig -152.255100  RotCW 0.000000
+QML_OriginQuality  assocPhCt 13  usedPhCt 9  assocStaCt -1  usedStaCt 5  depthPhCt -1  stdErr 0.0613906  azGap 177.787  secAzGap 279.358  gtLevel -  minDist 6.92504 maxDist 28.72 medDist 14.0959
+QML_OriginUncertainty  horUnc -1  minHorUnc 0.912035  maxHorUnc 3.24465  azMaxHorUnc 179.474
+QML_ConfidenceEllipsoid  semiMajorAxisLength 4.78907  semiMinorAxisLength 0.945974  semiIntermediateAxisLength 1.4214  majorAxisPlunge 0  majorAxisAzimuth 0  majorAxisRotation 30.796
+FOCALMECH  Hyp  61.321233 -152.370533 5.218040 Mech  0 0 0 mf  0 nObs -1
+DIFFERENTIAL  Nhyp 0
+END_NLLOC
+
+NLLOC "./loc/volcano.20241014.144808.grid0" "LOCATED" "Location completed."
+PUBLIC_ID None
+SIGNATURE "MARN+VDAP   obs:./obs/210046789.obs   NLLoc:v7.00.13(17Jan2022)   run:03Aug2025 05h11m24"
+COMMENT "Santa Ana, El Salvador"
+GRID  100 100 30  -50 -50 -3  1 1 1 PROB_DENSITY
+SEARCH OCTREE nInitial 4400 nEvaluated 20000 smallestNodeSide 0.154688/0.154688/0.082386 oct_tree_integral 4.954395e+00 scatter_volume 4.954395e+00
+HYPOCENTER  x -8.31172 y 3.13516 z 4.95028  OT 5.90835  ix -1 iy -1 iz -1 MAXIMUM_LIKELIHOOD
+GEOGRAPHIC  OT 2024 10 14  14 48 5.908354  Lat 61.327132 Long -152.410245 Depth 4.950284
+QUALITY  Pmax 1.29287e+14 MFmin 15.2456 MFmax 15.9743 RMS 0.0532639 Nphs 7 Gap 295.27 Dist 7.84924 Mamp -9.90 0 Mdur -9.90 0
+VPVSRATIO  VpVsRatio 2.57499  Npair 3  Diff 2.1
+STATISTICS  ExpectX -7.837410 Y 0.101743 Z 5.740878  CovXX 5.85542 XY -7.74563 XZ 2.31595 YY 25.0351 YZ -6.97181 ZZ 6.25023 EllAz1  68.0746 Dip1  8.21027 Len1  3.30691 Az2  313.499 Dip2  70.8671 Len2  3.75885 Len3  1.029768e+01
+STAT_GEOG  ExpectLat 61.299913 Long -152.401329 Depth 5.740878
+TRANSFORM  SDC LatOrig 61.299000  LongOrig -152.255100  RotCW 0.000000
+QML_OriginQuality  assocPhCt 10  usedPhCt 7  assocStaCt -1  usedStaCt 4  depthPhCt -1  stdErr 0.0532639  azGap 295.27  secAzGap 295.885  gtLevel -  minDist 7.84924 maxDist 21.1445 medDist 15.2091
+QML_OriginUncertainty  horUnc -1  minHorUnc 2.67798  maxHorUnc 7.99229  azMaxHorUnc 160.536
+QML_ConfidenceEllipsoid  semiMajorAxisLength 10.2977  semiMinorAxisLength 3.30691  semiIntermediateAxisLength 3.75885  majorAxisPlunge 0  majorAxisAzimuth 0  majorAxisRotation 8.84066
+FOCALMECH  Hyp  61.327132 -152.410245 4.950284 Mech  0 0 0 mf  0 nObs -1
+DIFFERENTIAL  Nhyp 0
+END_NLLOC
+
+NLLOC "./loc/volcano.20241014.160222.grid0" "LOCATED" "Location completed."
+PUBLIC_ID None
+SIGNATURE "MARN+VDAP   obs:./obs/210046809.obs   NLLoc:v7.00.13(17Jan2022)   run:03Aug2025 05h11m24"
+COMMENT "Santa Ana, El Salvador"
+GRID  100 100 30  -50 -50 -3  1 1 1 PROB_DENSITY
+SEARCH OCTREE nInitial 4400 nEvaluated 20000 smallestNodeSide 0.038672/0.038672/0.020597 oct_tree_integral 3.206328e-01 scatter_volume 3.178600e-01
+HYPOCENTER  x -0.983398 y -3.26504 z 4.81641  OT 21.2137  ix -1 iy -1 iz -1 MAXIMUM_LIKELIHOOD
+GEOGRAPHIC  OT 2024 10 14  16 02 21.213674  Lat 61.269703 Long -152.273439 Depth 4.816406
+QUALITY  Pmax 5.33714e+17 MFmin 18.2323 MFmax 18.3787 RMS 0.0219179 Nphs 8 Gap 182.419 Dist 5.42707 Mamp -9.90 0 Mdur -9.90 0
+VPVSRATIO  VpVsRatio 1.37301  Npair 4  Diff 0.5
+STATISTICS  ExpectX -0.964553 Y -3.300278 Z 4.797678  CovXX 0.0677946 XY 0.0146671 XZ -0.0331222 YY 0.10931 YZ 0.018952 ZZ 0.400705 EllAz1  288.541 Dip1  -6.25198 Len1  0.456553 Az2  18.7009 Dip2  -1.46363 Len2  0.633709 Len3  1.195677e+00
+STAT_GEOG  ExpectLat 61.269386 Long -152.273088 Depth 4.797678
+TRANSFORM  SDC LatOrig 61.299000  LongOrig -152.255100  RotCW 0.000000
+QML_OriginQuality  assocPhCt 14  usedPhCt 8  assocStaCt -1  usedStaCt 4  depthPhCt -1  stdErr 0.0219179  azGap 182.419  secAzGap 182.419  gtLevel -  minDist 5.42707 maxDist 13.6496 medDist 8.0099
+QML_OriginUncertainty  horUnc -1  minHorUnc 0.381067  maxHorUnc 0.511986  azMaxHorUnc 17.6221
+QML_ConfidenceEllipsoid  semiMajorAxisLength 1.19568  semiMinorAxisLength 0.456553  semiIntermediateAxisLength 0.633709  majorAxisPlunge 0  majorAxisAzimuth 0  majorAxisRotation 186.591
+FOCALMECH  Hyp  61.269703 -152.273439 4.816406 Mech  0 0 0 mf  0 nObs -1
+DIFFERENTIAL  Nhyp 0
+END_NLLOC
+
+NLLOC "./loc/volcano.20241014.205430.grid0" "LOCATED" "Location completed."
+PUBLIC_ID None
+SIGNATURE "MARN+VDAP   obs:./obs/210046869.obs   NLLoc:v7.00.13(17Jan2022)   run:03Aug2025 05h11m24"
+COMMENT "Santa Ana, El Salvador"
+GRID  100 100 30  -50 -50 -3  1 1 1 PROB_DENSITY
+SEARCH OCTREE nInitial 4400 nEvaluated 20016 smallestNodeSide 0.077344/0.077344/0.041193 oct_tree_integral 1.137467e+00 scatter_volume 1.127091e+00
+HYPOCENTER  x -1.81484 y 3.59922 z 4.29119  OT 27.8581  ix -1 iy -1 iz -1 MAXIMUM_LIKELIHOOD
+GEOGRAPHIC  OT 2024 10 14  20 54 27.858135  Lat 61.331296 Long -152.288978 Depth 4.291193
+QUALITY  Pmax 7.3331e+26 MFmin 26.1438 MFmax 26.3225 RMS 0.0488895 Nphs 12 Gap 258.32 Dist 9.20196 Mamp -9.90 0 Mdur -9.90 0
+VPVSRATIO  VpVsRatio 1.71137  Npair 6  Diff 1.32
+STATISTICS  ExpectX -1.223375 Y 3.537869 Z 5.405572  CovXX 1.04598 XY -0.763525 XZ 1.85483 YY 0.949471 YZ -1.38211 ZZ 4.08621 EllAz1  70.8712 Dip1  -18.2072 Len1  0.691373 Az2  349.649 Dip2  24.8878 Len2  1.24221 Len3  4.409896e+00
+STAT_GEOG  ExpectLat 61.330745 Long -152.277937 Depth 5.405572
+TRANSFORM  SDC LatOrig 61.299000  LongOrig -152.255100  RotCW 0.000000
+QML_OriginQuality  assocPhCt 20  usedPhCt 12  assocStaCt -1  usedStaCt 6  depthPhCt -1  stdErr 0.0488895  azGap 258.32  secAzGap 258.32  gtLevel -  minDist 9.20196 maxDist 15.3684 medDist 14.098
+QML_OriginUncertainty  horUnc -1  minHorUnc 0.731546  maxHorUnc 2.01355  azMaxHorUnc 133.192
+QML_ConfidenceEllipsoid  semiMajorAxisLength 4.4099  semiMinorAxisLength 0.691373  semiIntermediateAxisLength 1.24221  majorAxisPlunge 0  majorAxisAzimuth 0  majorAxisRotation 340.805
+FOCALMECH  Hyp  61.331296 -152.288978 4.291193 Mech  0 0 0 mf  0 nObs -1
+DIFFERENTIAL  Nhyp 0
+END_NLLOC
+
+NLLOC "./loc/volcano.20241014.225856.grid0" "LOCATED" "Location completed."
+PUBLIC_ID None
+SIGNATURE "MARN+VDAP   obs:./obs/210046894.obs   NLLoc:v7.00.13(17Jan2022)   run:03Aug2025 05h11m24"
+COMMENT "Santa Ana, El Salvador"
+GRID  100 100 30  -50 -50 -3  1 1 1 PROB_DENSITY
+SEARCH OCTREE nInitial 4400 nEvaluated 20024 smallestNodeSide 0.038672/0.038672/0.020597 oct_tree_integral 5.354920e-01 scatter_volume 5.354920e-01
+HYPOCENTER  x -0.287305 y 0.21543 z 1.06783  OT 54.6514  ix -1 iy -1 iz -1 MAXIMUM_LIKELIHOOD
+GEOGRAPHIC  OT 2024 10 14  22 58 54.651429  Lat 61.300933 Long -152.260461 Depth 1.067827
+QUALITY  Pmax 4.655e+21 MFmin 21.9216 MFmax 22.4155 RMS 0.0333708 Nphs 10 Gap 222.697 Dist 6.878 Mamp -9.90 0 Mdur -9.90 0
+VPVSRATIO  VpVsRatio 1.78421  Npair 4  Diff 1.7
+STATISTICS  ExpectX 0.093966 Y 0.509809 Z 2.580800  CovXX 0.399111 XY -0.112658 XZ 0.611243 YY 0.50357 YZ 0.250676 ZZ 2.23012 EllAz1  242.1 Dip1  17.3343 Len1  0.660502 Az2  332.719 Dip2  1.98118 Len2  1.42026 Len3  2.933494e+00
+STAT_GEOG  ExpectLat 61.303575 Long -152.253347 Depth 2.580800
+TRANSFORM  SDC LatOrig 61.299000  LongOrig -152.255100  RotCW 0.000000
+QML_OriginQuality  assocPhCt 16  usedPhCt 10  assocStaCt -1  usedStaCt 6  depthPhCt -1  stdErr 0.0333708  azGap 222.697  secAzGap 252.958  gtLevel -  minDist 6.878 maxDist 12.7847 medDist 11.0133
+QML_OriginUncertainty  horUnc -1  minHorUnc 0.867454  maxHorUnc 1.15052  azMaxHorUnc 147.436
+QML_ConfidenceEllipsoid  semiMajorAxisLength 2.93349  semiMinorAxisLength 0.660502  semiIntermediateAxisLength 1.42026  majorAxisPlunge 0  majorAxisAzimuth 0  majorAxisRotation 160.548
+FOCALMECH  Hyp  61.300933 -152.260461 1.067827 Mech  0 0 0 mf  0 nObs -1
+DIFFERENTIAL  Nhyp 0
+END_NLLOC
+

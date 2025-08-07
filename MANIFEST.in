@@ -1,0 +1,12 @@
+# =============================================================================
+# MANIFEST.in
+# =============================================================================
+"""
+include README.md
+include LICENSE
+include requirements.txt
+recursive-include nllpy/templates/data *.template
+recursive-include tests/data *.xml *.txt
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+"""

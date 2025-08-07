@@ -1,0 +1,31 @@
+NLLOC "./loc/taka.20230212.140305.grid0" "LOCATED" "Location completed."
+PUBLIC_ID None
+SIGNATURE "Alaska Volcano Observatory   obs:./obs/96116273.obs   NLLoc:v7.00.13(17Jan2022)   run:07Aug2025 00h07m13"
+COMMENT "Takawangha earthquake swarm, February 12, 2023"
+GRID  101 101 51  -50.5 -50.5 -5  1 1 1 PROB_DENSITY
+SEARCH OCTREE nInitial 4400 nEvaluated 20000 smallestNodeSide 0.039062/0.039062/0.035511 oct_tree_integral 5.111591e-01 scatter_volume 5.050371e-01
+HYPOCENTER  x 1.08203 y -2.08203 z 3.86009  OT 4.21291  ix -1 iy -1 iz -1 MAXIMUM_LIKELIHOOD
+GEOGRAPHIC  OT 2023 02 12  14 03 4.212915  Lat 51.854290 Long -177.990292 Depth 3.860085
+QUALITY  Pmax 1.13431e+17 MFmin 18.6499 MFmax 18.7581 RMS 0.0386564 Nphs 8 Gap 146.47 Dist 4.05089 Mamp -9.90 0 Mdur -9.90 0
+VPVSRATIO  VpVsRatio 2.08889  Npair 3  Diff 1.48
+STATISTICS  ExpectX 1.566725 Y -0.628547 Z 3.022353  CovXX 0.430407 XY 0.567906 XZ -0.539208 YY 1.57926 YZ -0.863129 ZZ 2.3246 EllAz1  288.42 Dip1  -6.34909 Len1  0.792744 Az2  193.6 Dip2  -37.0625 Len2  1.92151 Len3  3.313503e+00
+STAT_GEOG  ExpectLat 51.867352 Long -177.983253 Depth 3.022353
+TRANSFORM  SDC LatOrig 51.873000  LongOrig -178.006000  RotCW 0.000000
+QML_OriginQuality  assocPhCt 10  usedPhCt 8  assocStaCt -1  usedStaCt 5  depthPhCt -1  stdErr 0.0386564  azGap 146.47  secAzGap 240.853  gtLevel -  minDist 4.05089 maxDist 12.6415 medDist 10.6783
+QML_OriginUncertainty  horUnc -1  minHorUnc 0.673246  maxHorUnc 2.04181  azMaxHorUnc 22.3365
+QML_ConfidenceEllipsoid  semiMajorAxisLength 3.3135  semiMinorAxisLength 0.792744  semiIntermediateAxisLength 1.92151  majorAxisPlunge -52.2115  majorAxisAzimuth 26.6711  majorAxisRotation 143.622
+FOCALMECH  Hyp  51.854290 -177.990292 3.860085 Mech  0 0 0 mf  0 nObs -1
+PHASE ID Ins Cmp On Pha  FM Date     HrMn   Sec     Err  ErrMag    Coda      Amp       Per  >   TTpred    Res       Weight    StaLoc(X  Y         Z)        SDist    SAzim  RAz  RDip RQual    Tcorr 
+TASE   ?    BHZ  i P      u 20230212 1403    5.5600 GAU  2.00e-02 -1.00e+00 -1.00e+00 -1.00e+00 >    1.3811   -0.0340    1.4359   -2.2738   -4.3509   -0.6820    4.0509 235.94 236.3 134.7  9     0.0000
+TASE   ?    BHE  i S      ? 20230212 1403    6.6000 GAU  2.00e-02 -1.00e+00 -1.00e+00 -1.00e+00 >    2.3893   -0.0023    1.5317   -2.2738   -4.3509   -0.6820    4.0509 235.94 236.3 134.7  9     0.0000
+TAFP   ?    BHE  i S      ? 20230212 1403    6.8400 GAU  2.00e-02 -1.00e+00 -1.00e+00 -1.00e+00 >    2.6244    0.0027    1.5249    1.4248    2.8930   -0.4400    4.9868   3.94   5.7 118.8  8     0.0000
+TASO   ?    BHZ  i P      u 20230212 1403    6.7100 GAU  2.00e-02 -1.00e+00 -1.00e+00 -1.00e+00 >    2.5870   -0.0899    0.8539   -9.5959   -2.1643   -0.6900   10.6783 269.56 270.7 100.5  9     0.0000
+TASO   ?    BHN  i S      ? 20230212 1403    8.7400 GAU  2.00e-02 -1.00e+00 -1.00e+00 -1.00e+00 >    4.4754    0.0516    1.1639   -9.5959   -2.1643   -0.6900   10.6783 269.56 270.7 100.5  9     0.0000
+TAFL   ?    BHZ  i P      d 20230212 1403    7.1600 GAU  2.00e-02 -1.00e+00 -1.00e+00 -1.00e+00 >    2.9337    0.0134    1.4898    7.3240  -13.0750   -0.1860   12.6415 150.41 151.2  94.3  9     0.0000
+TAFL   ?    BHN  i S      ? 20230212 1403    9.6800 GAU  2.00e-02 -1.00e+00 -1.00e+00 -1.00e+00 >    5.0753    0.3918    0.0000    7.3240  -13.0750   -0.1860   12.6415 150.41 151.2  94.3  9     0.0000
+TAPA   ?    BHN  i S      ? 20230212 1403    7.2100 GAU  5.00e-02 -1.00e+00 -1.00e+00 -1.00e+00 >    5.2309   -2.2338    0.0000   13.1768   -6.5209   -0.6400   12.8836 110.15 109.9  95.5  9     0.0000
+KIMD   ?    BHZ  i P      d 20230212 1403   13.7400 GAU  2.00e-02 -1.00e+00 -1.00e+00 -1.00e+00 >    0.0000    0.0000    0.0000   53.1514  -12.4070   -0.1730    0.0000   0.00 359.0  -1.0  0     0.0000
+KIMD   ?    BHN  i S      ? 20230212 1403   20.7800 GAU  2.00e-02 -1.00e+00 -1.00e+00 -1.00e+00 >    0.0000    0.0000    0.0000   53.1514  -12.4070   -0.1730    0.0000   0.00 359.0  -1.0  0     0.0000
+END_PHASE
+END_NLLOC
+

@@ -1,0 +1,14 @@
+# https://ds.iris.edu/gmap/#network=AV&station=SP*&planet=earth
+#Network | Station | Latitude | Longitude | Elevation | Sitename | StartTime | EndTime
+#DATACENTER=IRISDMC,https://www.earthscope.org/data/
+AV|SPBG|61.2591|-152.3722|1087.0|Barrier Glacier, Mount Spurr, Alaska|2004-09-09T00:00:00|2599-12-31T23:59:59
+AV|SPBL|61.3764|-151.8947|927.0|Spurr Beluga Lake, Mount Spurr, Alaska|2018-09-05T00:00:00|2599-12-31T23:59:59
+AV|SPCG|61.2913|-152.0228|1329.0|Capps Glacier, Mount Spurr, Alaska|2004-09-08T00:00:00|2599-12-31T23:59:59
+AV|SPCL|61.1956|-152.3399|1274.0|Chakachamna Lake, Mount Spurr, Alaska|2018-07-12T00:00:00|2599-12-31T23:59:59
+AV|SPCN|61.223675|-152.18403|733.3|Chakachatna North, Mount Spurr, Alaska|2010-09-01T00:00:00|2599-12-31T23:59:59
+AV|SPCP|61.265465|-152.155495|1640.0|Crater Peak Broadband, Mount Spurr, Alaska|2010-10-02T00:00:00|2599-12-31T23:59:59
+AV|SPCR|61.2003|-152.2091|984.0|Chakachatna River, Mount Spurr, Alaska|2004-09-08T00:00:00|2599-12-31T23:59:59
+AV|SPNN|61.3662|-152.7012|1166.0|North Nagishlamina, Mount Spurr, Alaska|2011-07-31T00:00:00|2599-12-31T23:59:59
+AV|SPNW|61.3465|-152.6062|1040.0|Spurr Northwest, Mount Spurr, Alaska|2004-08-17T00:00:00|2011-07-31T00:00:00
+AV|SPU|61.1811|-152.0566|800.0|Mount Spurr, Mount Spurr, Alaska|1988-04-01T00:00:00|2599-12-31T23:59:59
+AV|SPWE|61.27346|-152.559|1317.0|Spurr West, Mount Spurr, Alaska|2004-08-17T00:00:00|2599-12-31T23:59:59

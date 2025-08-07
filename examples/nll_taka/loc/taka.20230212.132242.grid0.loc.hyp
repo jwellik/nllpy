@@ -1,0 +1,32 @@
+NLLOC "./loc/taka.20230212.132242.grid0" "LOCATED" "Location completed."
+PUBLIC_ID None
+SIGNATURE "Alaska Volcano Observatory   obs:./obs/96116253.obs   NLLoc:v7.00.13(17Jan2022)   run:07Aug2025 00h07m11"
+COMMENT "Takawangha earthquake swarm, February 12, 2023"
+GRID  101 101 51  -50.5 -50.5 -5  1 1 1 PROB_DENSITY
+SEARCH OCTREE nInitial 4400 nEvaluated 20000 smallestNodeSide 0.039062/0.039062/0.035511 oct_tree_integral 3.902705e-01 scatter_volume 3.902705e-01
+HYPOCENTER  x 1.72656 y -0.0703125 z 2.06676  OT 41.319  ix -1 iy -1 iz -1 MAXIMUM_LIKELIHOOD
+GEOGRAPHIC  OT 2023 02 12  13 22 41.318967  Lat 51.872368 Long -177.980931 Depth 2.066761
+QUALITY  Pmax 2.78737e+21 MFmin 21.4245 MFmax 21.6624 RMS 0.0394869 Nphs 9 Gap 219.873 Dist 5.85892 Mamp -9.90 0 Mdur -9.90 0
+VPVSRATIO  VpVsRatio 2.00796  Npair 4  Diff 1.49
+STATISTICS  ExpectX 1.582187 Y -0.512619 Z 3.440577  CovXX 0.0480183 XY 0.131392 XZ -0.191729 YY 0.670985 YZ -0.248548 ZZ 2.827 EllAz1  280.222 Dip1  -2.94257 Len1  0.224767 Az2  189.844 Dip2  -7.3066 Len2  1.52803 Len3  3.183078e+00
+STAT_GEOG  ExpectLat 51.868393 Long -177.983028 Depth 3.440577
+TRANSFORM  SDC LatOrig 51.873000  LongOrig -178.006000  RotCW 0.000000
+QML_OriginQuality  assocPhCt 11  usedPhCt 9  assocStaCt -1  usedStaCt 5  depthPhCt -1  stdErr 0.0394869  azGap 219.873  secAzGap 219.873  gtLevel -  minDist 5.85892 maxDist 14.1581 medDist 13.1422
+QML_OriginUncertainty  horUnc -1  minHorUnc 0.222063  maxHorUnc 1.26665  azMaxHorUnc 11.4357
+QML_ConfidenceEllipsoid  semiMajorAxisLength 3.18308  semiMinorAxisLength 0.224767  semiIntermediateAxisLength 1.52803  majorAxisPlunge -82.1171  majorAxisAzimuth 32.0146  majorAxisRotation 157.246
+FOCALMECH  Hyp  51.872368 -177.980931 2.066761 Mech  0 0 0 mf  0 nObs -1
+PHASE ID Ins Cmp On Pha  FM Date     HrMn   Sec     Err  ErrMag    Coda      Amp       Per  >   TTpred    Res       Weight    StaLoc(X  Y         Z)        SDist    SAzim  RAz  RDip RQual    Tcorr 
+TAFP   ?    BHE  i S      ? 20230212 1322   44.1400 GAU  2.00e-02 -1.00e+00 -1.00e+00 -1.00e+00 >    1.6769    1.1441    0.0000    1.4248    2.8930   -0.4400    2.9786 354.19 355.7 119.2  8     0.0000
+TASE   ?    BHZ  i P      u 20230212 1322   42.8800 GAU  2.00e-02 -1.00e+00 -1.00e+00 -1.00e+00 >    1.5163    0.0447    1.0961   -2.2738   -4.3509   -0.6820    5.8589 223.06 222.5 105.5  9     0.0000
+TASE   ?    BHN  i S      ? 20230212 1322   43.9100 GAU  2.00e-02 -1.00e+00 -1.00e+00 -1.00e+00 >    2.6232   -0.0322    1.2388   -2.2738   -4.3509   -0.6820    5.8589 223.06 222.5 105.5  9     0.0000
+TASO   ?    BHZ  i P      u 20230212 1322   44.0100 GAU  2.00e-02 -1.00e+00 -1.00e+00 -1.00e+00 >    2.7233   -0.0323    1.2383   -9.5959   -2.1643   -0.6900   11.5145 259.52 258.3  90.3  9     0.0000
+TASO   ?    BHN  i S      ? 20230212 1322   46.0500 GAU  2.00e-02 -1.00e+00 -1.00e+00 -1.00e+00 >    4.7114    0.0197    1.2629   -9.5959   -2.1643   -0.6900   11.5145 259.52 258.3  90.3  9     0.0000
+TAPA   ?    BHZ  i P      u 20230212 1322   44.3600 GAU  2.00e-02 -1.00e+00 -1.00e+00 -1.00e+00 >    3.0621   -0.0210    1.2865   13.1768   -6.5209   -0.6400   13.1422 119.39 117.9  85.7  9     0.0000
+TAPA   ?    BHN  i S      ? 20230212 1322   46.6400 GAU  2.00e-02 -1.00e+00 -1.00e+00 -1.00e+00 >    5.2974    0.0236    1.2282   13.1768   -6.5209   -0.6400   13.1422 119.39 117.9  85.7  9     0.0000
+TAFL   ?    BHZ  i P      d 20230212 1322   44.4400 GAU  2.00e-02 -1.00e+00 -1.00e+00 -1.00e+00 >    3.2506   -0.1295    0.4129    7.3240  -13.0750   -0.1860   14.1581 156.71 156.2  82.2  9     0.0000
+TAFL   ?    BHN  i S      ? 20230212 1322   46.9600 GAU  2.00e-02 -1.00e+00 -1.00e+00 -1.00e+00 >    5.6235    0.0175    1.2362    7.3240  -13.0750   -0.1860   14.1581 156.71 156.2  82.2  9     0.0000
+KIMD   ?    BHZ  i P      d 20230212 1322   51.0300 GAU  2.00e-02 -1.00e+00 -1.00e+00 -1.00e+00 >    0.0000    0.0000    0.0000   53.1514  -12.4070   -0.1730    0.0000   0.00 359.0  -1.0  0     0.0000
+KIMD   ?    BHN  i S      ? 20230212 1322   58.0300 GAU  2.00e-02 -1.00e+00 -1.00e+00 -1.00e+00 >    0.0000    0.0000    0.0000   53.1514  -12.4070   -0.1730    0.0000   0.00 359.0  -1.0  0     0.0000
+END_PHASE
+END_NLLOC
+

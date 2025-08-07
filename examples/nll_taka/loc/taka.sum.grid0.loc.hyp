@@ -1,0 +1,323 @@
+NLLOC "./loc/taka.20230212.055131.grid0" "LOCATED" "Location completed."
+PUBLIC_ID None
+SIGNATURE "Alaska Volcano Observatory   obs:./obs/6000jnp5.obs   NLLoc:v7.00.13(17Jan2022)   run:07Aug2025 00h06m59"
+COMMENT "Takawangha earthquake swarm, February 12, 2023"
+GRID  101 101 51  -50.5 -50.5 -5  1 1 1 PROB_DENSITY
+SEARCH OCTREE nInitial 4400 nEvaluated 20000 smallestNodeSide 0.019531/0.019531/0.017756 oct_tree_integral 6.086585e-02 scatter_volume 6.086585e-02
+HYPOCENTER  x 1.63867 y -2.36523 z 3.51385  OT 30.437  ix -1 iy -1 iz -1 MAXIMUM_LIKELIHOOD
+GEOGRAPHIC  OT 2023 02 12  05 51 30.437004  Lat 51.851745 Long -177.982213 Depth 3.513849
+QUALITY  Pmax 3.25031e+27 MFmin 27.7833 MFmax 27.8314 RMS 0.0368042 Nphs 11 Gap 112.136 Dist 4.38756 Mamp -9.90 0 Mdur -9.90 0
+VPVSRATIO  VpVsRatio 2  Npair 5  Diff 1.35
+STATISTICS  ExpectX 1.565432 Y -2.362716 Z 3.653475  CovXX 0.0326174 XY 0.00356766 XZ -0.0575067 YY 0.064696 YZ -0.00374099 ZZ 0.21512 EllAz1  92.9223 Dip1  16.0301 Len1  0.236846 Az2  182.265 Dip2  -2.288 Len2  0.477857 Len3  9.046800e-01
+STAT_GEOG  ExpectLat 51.851767 Long -177.983276 Depth 3.653475
+TRANSFORM  SDC LatOrig 51.873000  LongOrig -178.006000  RotCW 0.000000
+QML_OriginQuality  assocPhCt 47  usedPhCt 11  assocStaCt -1  usedStaCt 6  depthPhCt -1  stdErr 0.0368042  azGap 112.136  secAzGap 112.136  gtLevel -  minDist 4.38756 maxDist 12.2637 medDist 11.5892
+QML_OriginUncertainty  horUnc -1  minHorUnc 0.272247  maxHorUnc 0.386914  azMaxHorUnc 6.27015
+QML_ConfidenceEllipsoid  semiMajorAxisLength 0.90468  semiMinorAxisLength 0.236846  semiIntermediateAxisLength 0.477857  majorAxisPlunge -73.7987  majorAxisAzimuth 84.3607  majorAxisRotation 276.959
+FOCALMECH  Hyp  51.851745 -177.982213 3.513849 Mech  0 0 0 mf  0 nObs -1
+END_NLLOC
+
+NLLOC "./loc/taka.20230212.221422.grid0" "LOCATED" "Location completed."
+PUBLIC_ID None
+SIGNATURE "Alaska Volcano Observatory   obs:./obs/6000jnqh.obs   NLLoc:v7.00.13(17Jan2022)   run:07Aug2025 00h07m00"
+COMMENT "Takawangha earthquake swarm, February 12, 2023"
+GRID  101 101 51  -50.5 -50.5 -5  1 1 1 PROB_DENSITY
+SEARCH OCTREE nInitial 4400 nEvaluated 20016 smallestNodeSide 0.019531/0.019531/0.017756 oct_tree_integral 6.725349e-02 scatter_volume 6.650260e-02
+HYPOCENTER  x 1.78516 y -0.285156 z 1.44531  OT 21.1936  ix -1 iy -1 iz -1 MAXIMUM_LIKELIHOOD
+GEOGRAPHIC  OT 2023 02 12  22 14 21.193615  Lat 51.870437 Long -177.980081 Depth 1.445313
+QUALITY  Pmax 1.29249e+25 MFmin 24.9006 MFmax 25.1604 RMS 0.0399654 Nphs 10 Gap 125.164 Dist 3.19851 Mamp -9.90 0 Mdur -9.90 0
+VPVSRATIO  VpVsRatio 2  Npair 4  Diff 1.54
+STATISTICS  ExpectX 1.726750 Y -0.482218 Z 1.838557  CovXX 0.0527036 XY 0.183765 XZ -0.160232 YY 0.887273 YZ -0.578086 ZZ 0.784596 EllAz1  98.1946 Dip1  5.6204 Len1  0.190766 Az2  181.964 Dip2  -47.7979 Len2  0.950079 Len3  2.269075e+00
+STAT_GEOG  ExpectLat 51.868667 Long -177.980929 Depth 1.838557
+TRANSFORM  SDC LatOrig 51.873000  LongOrig -178.006000  RotCW 0.000000
+QML_OriginQuality  assocPhCt 39  usedPhCt 10  assocStaCt -1  usedStaCt 6  depthPhCt -1  stdErr 0.0399654  azGap 125.164  secAzGap 182.125  gtLevel -  minDist 3.19851 maxDist 13.9377 medDist 11.2607
+QML_OriginUncertainty  horUnc -1  minHorUnc 0.17965  maxHorUnc 1.45934  azMaxHorUnc 11.8839
+QML_ConfidenceEllipsoid  semiMajorAxisLength 2.26907  semiMinorAxisLength 0.190766  semiIntermediateAxisLength 0.950079  majorAxisPlunge -41.6493  majorAxisAzimuth 13.2158  majorAxisRotation 48.5668
+FOCALMECH  Hyp  51.870437 -177.980081 1.445313 Mech  0 0 0 mf  0 nObs -1
+END_NLLOC
+
+NLLOC "./loc/taka.20230212.010852.grid0" "LOCATED" "Location completed."
+PUBLIC_ID None
+SIGNATURE "Alaska Volcano Observatory   obs:./obs/96115863.obs   NLLoc:v7.00.13(17Jan2022)   run:07Aug2025 00h07m01"
+COMMENT "Takawangha earthquake swarm, February 12, 2023"
+GRID  101 101 51  -50.5 -50.5 -5  1 1 1 PROB_DENSITY
+SEARCH OCTREE nInitial 4400 nEvaluated 20000 smallestNodeSide 0.039062/0.039062/0.035511 oct_tree_integral 4.029816e-01 scatter_volume 4.016661e-01
+HYPOCENTER  x 1.47266 y -2.51172 z 3.82457  OT 50.8135  ix -1 iy -1 iz -1 MAXIMUM_LIKELIHOOD
+GEOGRAPHIC  OT 2023 02 12  01 08 50.813487  Lat 51.850428 Long -177.984623 Depth 3.824574
+QUALITY  Pmax 1.136e+15 MFmin 15.502 MFmax 15.612 RMS 0.0360942 Nphs 7 Gap 151.524 Dist 4.17359 Mamp -9.90 0 Mdur -9.90 0
+VPVSRATIO  VpVsRatio 2.51851  Npair 3  Diff 1.46
+STATISTICS  ExpectX 1.740266 Y -1.660269 Z 3.395585  CovXX 0.653178 XY 1.10105 XZ -0.485198 YY 3.00464 YZ -0.812859 ZZ 1.9362 EllAz1  109.839 Dip1  5.94405 Len1  0.844901 Az2  187.744 Dip2  -63.5768 Len2  2.30376 Len3  3.704825e+00
+STAT_GEOG  ExpectLat 51.858080 Long -177.980736 Depth 3.395585
+TRANSFORM  SDC LatOrig 51.873000  LongOrig -178.006000  RotCW 0.000000
+QML_OriginQuality  assocPhCt 7  usedPhCt 7  assocStaCt -1  usedStaCt 4  depthPhCt -1  stdErr 0.0360942  azGap 151.524  secAzGap 239.219  gtLevel -  minDist 4.17359 maxDist 12.0756 medDist 8.23947
+QML_OriginUncertainty  horUnc -1  minHorUnc 0.708282  maxHorUnc 2.8127  azMaxHorUnc 21.5607
+QML_ConfidenceEllipsoid  semiMajorAxisLength 3.70483  semiMinorAxisLength 0.844901  semiIntermediateAxisLength 2.30376  majorAxisPlunge -25.6442  majorAxisAzimuth 22.7039  majorAxisRotation 10.4758
+FOCALMECH  Hyp  51.850428 -177.984623 3.824574 Mech  0 0 0 mf  0 nObs -1
+END_NLLOC
+
+NLLOC "./loc/taka.20230212.045000.grid0" "LOCATED" "Location completed."
+PUBLIC_ID None
+SIGNATURE "Alaska Volcano Observatory   obs:./obs/96116063.obs   NLLoc:v7.00.13(17Jan2022)   run:07Aug2025 00h07m02"
+COMMENT "Takawangha earthquake swarm, February 12, 2023"
+GRID  101 101 51  -50.5 -50.5 -5  1 1 1 PROB_DENSITY
+SEARCH OCTREE nInitial 4400 nEvaluated 20008 smallestNodeSide 0.039062/0.039062/0.035511 oct_tree_integral 3.257073e-01 scatter_volume 3.257073e-01
+HYPOCENTER  x 4.36328 y -1.69141 z 5.20952  OT 58.5528  ix -1 iy -1 iz -1 MAXIMUM_LIKELIHOOD
+GEOGRAPHIC  OT 2023 02 12  04 49 58.552833  Lat 51.857800 Long -177.942657 Depth 5.209517
+QUALITY  Pmax 1.11654e+19 MFmin 18.6813 MFmax 18.8314 RMS 0.0254565 Nphs 8 Gap 151.379 Dist 5.44529 Mamp -9.90 0 Mdur -9.90 0
+VPVSRATIO  VpVsRatio 2.15625  Npair 3  Diff 0.82
+STATISTICS  ExpectX 4.488439 Y -1.232246 Z 5.373856  CovXX 0.0438831 XY 0.0699322 XZ 0.0354735 YY 0.29225 YZ 0.11466 ZZ 0.795216 EllAz1  104.517 Dip1  -0.416751 Len1  0.300073 Az2  194.42 Dip2  13.1615 Len2  0.998696 Len3  1.704765e+00
+STAT_GEOG  ExpectLat 51.861926 Long -177.940837 Depth 5.373856
+TRANSFORM  SDC LatOrig 51.873000  LongOrig -178.006000  RotCW 0.000000
+QML_OriginQuality  assocPhCt 10  usedPhCt 8  assocStaCt -1  usedStaCt 5  depthPhCt -1  stdErr 0.0254565  azGap 151.379  secAzGap 210.661  gtLevel -  minDist 5.44529 maxDist 13.9672 medDist 10.05
+QML_OriginUncertainty  horUnc -1  minHorUnc 0.242397  maxHorUnc 0.845192  azMaxHorUnc 14.6927
+QML_ConfidenceEllipsoid  semiMajorAxisLength 1.70477  semiMinorAxisLength 0.300073  semiIntermediateAxisLength 0.998696  majorAxisPlunge 76.8317  majorAxisAzimuth 16.299  majorAxisRotation 2.0414
+FOCALMECH  Hyp  51.857800 -177.942657 5.209517 Mech  0 0 0 mf  0 nObs -1
+END_NLLOC
+
+NLLOC "./loc/taka.20230212.045124.grid0" "LOCATED" "Location completed."
+PUBLIC_ID None
+SIGNATURE "Alaska Volcano Observatory   obs:./obs/96116073.obs   NLLoc:v7.00.13(17Jan2022)   run:07Aug2025 00h07m04"
+COMMENT "Takawangha earthquake swarm, February 12, 2023"
+GRID  101 101 51  -50.5 -50.5 -5  1 1 1 PROB_DENSITY
+SEARCH OCTREE nInitial 4400 nEvaluated 20000 smallestNodeSide 0.039062/0.039062/0.035511 oct_tree_integral 4.324542e-01 scatter_volume 4.324542e-01
+HYPOCENTER  x 5.14453 y 0.457031 z 1.55185  OT 21.9666  ix -1 iy -1 iz -1 MAXIMUM_LIKELIHOOD
+GEOGRAPHIC  OT 2023 02 12  04 51 21.966649  Lat 51.877107 Long -177.931299 Depth 1.551847
+QUALITY  Pmax 1.63772e+14 MFmin 15.3721 MFmax 15.8443 RMS 0.0443899 Nphs 7 Gap 227.631 Dist 4.44636 Mamp -9.90 0 Mdur -9.90 0
+VPVSRATIO  VpVsRatio 0.5  Npair 2  Diff 0.95
+STATISTICS  ExpectX 5.027746 Y 0.407795 Z 2.256944  CovXX 4.81014 XY 4.57224 XZ -2.51498 YY 6.4823 YZ -1.80438 ZZ 4.76995 EllAz1  125.19 Dip1  14.3454 Len1  1.67943 Az2  186.788 Dip2  -61.7351 Len2  3.58793 Len3  6.403636e+00
+STAT_GEOG  ExpectLat 51.876665 Long -177.932996 Depth 2.256944
+TRANSFORM  SDC LatOrig 51.873000  LongOrig -178.006000  RotCW 0.000000
+QML_OriginQuality  assocPhCt 7  usedPhCt 7  assocStaCt -1  usedStaCt 5  depthPhCt -1  stdErr 0.0443899  azGap 227.631  secAzGap 270.934  gtLevel -  minDist 4.44636 maxDist 14.9717 medDist 13.7064
+QML_OriginUncertainty  horUnc -1  minHorUnc 1.51518  maxHorUnc 4.86588  azMaxHorUnc 39.8187
+QML_ConfidenceEllipsoid  semiMajorAxisLength 6.40364  semiMinorAxisLength 1.67943  semiIntermediateAxisLength 3.58793  majorAxisPlunge -23.8009  majorAxisAzimuth 41.6665  majorAxisRotation 22.6458
+FOCALMECH  Hyp  51.877107 -177.931299 1.551847 Mech  0 0 0 mf  0 nObs -1
+END_NLLOC
+
+NLLOC "./loc/taka.20230212.045256.grid0" "LOCATED" "Location completed."
+PUBLIC_ID None
+SIGNATURE "Alaska Volcano Observatory   obs:./obs/96116083.obs   NLLoc:v7.00.13(17Jan2022)   run:07Aug2025 00h07m05"
+COMMENT "Takawangha earthquake swarm, February 12, 2023"
+GRID  101 101 51  -50.5 -50.5 -5  1 1 1 PROB_DENSITY
+SEARCH OCTREE nInitial 4400 nEvaluated 20024 smallestNodeSide 0.078125/0.078125/0.071023 oct_tree_integral 1.212428e+00 scatter_volume 1.212428e+00
+HYPOCENTER  x 5.39844 y 0.398438 z 1.14347  OT 54.4218  ix -1 iy -1 iz -1 MAXIMUM_LIKELIHOOD
+GEOGRAPHIC  OT 2023 02 12  04 52 54.421767  Lat 51.876581 Long -177.927613 Depth 1.143466
+QUALITY  Pmax 2.24028e+12 MFmin 12.8354 MFmax 13.542 RMS 0.0382131 Nphs 6 Gap 229.747 Dist 4.69174 Mamp -9.90 0 Mdur -9.90 0
+VPVSRATIO  VpVsRatio 0.5  Npair 2  Diff 0.88
+STATISTICS  ExpectX 5.895812 Y -0.498347 Z 2.640138  CovXX 27.2369 XY -11.9606 XZ 2.93536 YY 21.6003 YZ -7.77502 ZZ 10.4233 EllAz1  199.647 Dip1  -54.2499 Len1  4.54911 Az2  230.048 Dip2  31.837 Len2  7.2378 Len3  1.166660e+01
+STAT_GEOG  ExpectLat 51.868522 Long -177.920399 Depth 2.640138
+TRANSFORM  SDC LatOrig 51.873000  LongOrig -178.006000  RotCW 0.000000
+QML_OriginQuality  assocPhCt 6  usedPhCt 6  assocStaCt -1  usedStaCt 4  depthPhCt -1  stdErr 0.0382131  azGap 229.747  secAzGap 271.566  gtLevel -  minDist 4.69174 maxDist 15.2118 medDist 11.3168
+QML_OriginUncertainty  horUnc -1  minHorUnc 5.28206  maxHorUnc 9.18833  azMaxHorUnc 128.371
+QML_ConfidenceEllipsoid  semiMajorAxisLength 11.6666  semiMinorAxisLength 4.54911  semiIntermediateAxisLength 7.2378  majorAxisPlunge 14.547  majorAxisAzimuth 130.776  majorAxisRotation 299.595
+FOCALMECH  Hyp  51.876581 -177.927613 1.143466 Mech  0 0 0 mf  0 nObs -1
+END_NLLOC
+
+NLLOC "./loc/taka.20230212.051820.grid0" "LOCATED" "Location completed."
+PUBLIC_ID None
+SIGNATURE "Alaska Volcano Observatory   obs:./obs/96116093.obs   NLLoc:v7.00.13(17Jan2022)   run:07Aug2025 00h07m06"
+COMMENT "Takawangha earthquake swarm, February 12, 2023"
+GRID  101 101 51  -50.5 -50.5 -5  1 1 1 PROB_DENSITY
+SEARCH OCTREE nInitial 4400 nEvaluated 20000 smallestNodeSide 0.039062/0.039062/0.035511 oct_tree_integral 2.062437e-01 scatter_volume 2.062437e-01
+HYPOCENTER  x 5.39844 y -1.94531 z 5.04972  OT 18.0988  ix -1 iy -1 iz -1 MAXIMUM_LIKELIHOOD
+GEOGRAPHIC  OT 2023 02 12  05 18 18.098835  Lat 51.855518 Long -177.927631 Depth 5.049716
+QUALITY  Pmax 1.66819e+19 MFmin 18.5522 MFmax 18.7983 RMS 0.01436 Nphs 8 Gap 159.861 Dist 6.26089 Mamp -9.90 0 Mdur -9.90 0
+VPVSRATIO  VpVsRatio 2.39474  Npair 3  Diff 0.67
+STATISTICS  ExpectX 5.501478 Y -1.610273 Z 5.176639  CovXX 0.0621179 XY 0.121717 XZ 0.138697 YY 0.444002 YZ 0.303517 ZZ 1.18223 EllAz1  104.08 Dip1  -2.99978 Len1  0.291648 Az2  192.902 Dip2  21.4321 Len2  1.11098 Len3  2.154193e+00
+STAT_GEOG  ExpectLat 51.858529 Long -177.926133 Depth 5.176639
+TRANSFORM  SDC LatOrig 51.873000  LongOrig -178.006000  RotCW 0.000000
+QML_OriginQuality  assocPhCt 8  usedPhCt 8  assocStaCt -1  usedStaCt 5  depthPhCt -1  stdErr 0.01436  azGap 159.861  secAzGap 211.303  gtLevel -  minDist 6.26089 maxDist 14.996 medDist 9.02436
+QML_OriginUncertainty  horUnc -1  minHorUnc 0.247451  maxHorUnc 1.05016  azMaxHorUnc 16.2579
+QML_ConfidenceEllipsoid  semiMajorAxisLength 2.15419  semiMinorAxisLength 0.291648  semiIntermediateAxisLength 1.11098  majorAxisPlunge 68.3382  majorAxisAzimuth 21.662  majorAxisRotation 11.1373
+FOCALMECH  Hyp  51.855518 -177.927631 5.049716 Mech  0 0 0 mf  0 nObs -1
+END_NLLOC
+
+NLLOC "./loc/taka.20230212.061135.grid0" "LOCATED" "Location completed."
+PUBLIC_ID None
+SIGNATURE "Alaska Volcano Observatory   obs:./obs/96116173.obs   NLLoc:v7.00.13(17Jan2022)   run:07Aug2025 00h07m07"
+COMMENT "Takawangha earthquake swarm, February 12, 2023"
+GRID  101 101 51  -50.5 -50.5 -5  1 1 1 PROB_DENSITY
+SEARCH OCTREE nInitial 4400 nEvaluated 20008 smallestNodeSide 0.039062/0.039062/0.035511 oct_tree_integral 4.776070e-01 scatter_volume 4.776070e-01
+HYPOCENTER  x 2.44922 y -0.167969 z 2.68821  OT 33.8533  ix -1 iy -1 iz -1 MAXIMUM_LIKELIHOOD
+GEOGRAPHIC  OT 2023 02 12  06 11 33.853316  Lat 51.871491 Long -177.970439 Depth 2.688210
+QUALITY  Pmax 3.78962e+12 MFmin 13.4246 MFmax 14.0515 RMS 0.0399944 Nphs 6 Gap 177.813 Dist 3.22782 Mamp -9.90 0 Mdur -9.90 0
+VPVSRATIO  VpVsRatio 0.5  Npair 2  Diff 1.3
+STATISTICS  ExpectX 2.478965 Y 0.251922 Z 3.539845  CovXX 6.15193 XY 3.7576 XZ 0.19918 YY 8.89248 YZ 1.81426 ZZ 4.41595 EllAz1  132.551 Dip1  35.3728 Len1  3.19649 Az2  287.562 Dip2  51.9292 Len2  4.07147 Len3  6.473074e+00
+STAT_GEOG  ExpectLat 51.875264 Long -177.970005 Depth 3.539845
+TRANSFORM  SDC LatOrig 51.873000  LongOrig -178.006000  RotCW 0.000000
+QML_OriginQuality  assocPhCt 6  usedPhCt 6  assocStaCt -1  usedStaCt 4  depthPhCt -1  stdErr 0.0399944  azGap 177.813  secAzGap 258.72  gtLevel -  minDist 3.22782 maxDist 13.7969 medDist 9.25927
+QML_OriginUncertainty  horUnc -1  minHorUnc 2.84638  maxHorUnc 5.14784  azMaxHorUnc 34.9824
+QML_ConfidenceEllipsoid  semiMajorAxisLength 6.47307  semiMinorAxisLength 3.19649  semiIntermediateAxisLength 4.07147  majorAxisPlunge 12.2638  majorAxisAzimuth 33.6738  majorAxisRotation 38.9477
+FOCALMECH  Hyp  51.871491 -177.970439 2.688210 Mech  0 0 0 mf  0 nObs -1
+END_NLLOC
+
+NLLOC "./loc/taka.20230212.074131.grid0" "LOCATED" "Location completed."
+PUBLIC_ID None
+SIGNATURE "Alaska Volcano Observatory   obs:./obs/96116193.obs   NLLoc:v7.00.13(17Jan2022)   run:07Aug2025 00h07m08"
+COMMENT "Takawangha earthquake swarm, February 12, 2023"
+GRID  101 101 51  -50.5 -50.5 -5  1 1 1 PROB_DENSITY
+SEARCH OCTREE nInitial 4400 nEvaluated 20008 smallestNodeSide 0.019531/0.019531/0.017756 oct_tree_integral 1.392300e-01 scatter_volume 1.382307e-01
+HYPOCENTER  x 2.30273 y -2.3457 z 5.48473  OT 29.4256  ix -1 iy -1 iz -1 MAXIMUM_LIKELIHOOD
+GEOGRAPHIC  OT 2023 02 12  07 41 29.425559  Lat 51.851920 Long -177.972573 Depth 5.484730
+QUALITY  Pmax 1.62781e+22 MFmin 21.6099 MFmax 21.6443 RMS 0.0291511 Nphs 9 Gap 120.518 Dist 4.99659 Mamp -9.90 0 Mdur -9.90 0
+VPVSRATIO  VpVsRatio 4.49996  Npair 4  Diff 1.06
+STATISTICS  ExpectX 2.378036 Y -2.020394 Z 5.358804  CovXX 0.0403898 XY 0.0700859 XZ -0.0502643 YY 0.312445 YZ -0.101437 ZZ 0.220433 EllAz1  100.48 Dip1  8.76551 Len1  0.262658 Az2  176.998 Dip2  -56.5213 Len2  0.740126 Len3  1.186111e+00
+STAT_GEOG  ExpectLat 51.854844 Long -177.971479 Depth 5.358804
+TRANSFORM  SDC LatOrig 51.873000  LongOrig -178.006000  RotCW 0.000000
+QML_OriginQuality  assocPhCt 13  usedPhCt 9  assocStaCt -1  usedStaCt 5  depthPhCt -1  stdErr 0.0291511  azGap 120.518  secAzGap 200.131  gtLevel -  minDist 4.99659 maxDist 11.9 medDist 11.6481
+QML_OriginUncertainty  horUnc -1  minHorUnc 0.231972  maxHorUnc 0.870465  azMaxHorUnc 13.6295
+QML_ConfidenceEllipsoid  semiMajorAxisLength 1.18611  semiMinorAxisLength 0.262658  semiIntermediateAxisLength 0.740126  majorAxisPlunge -32.0163  majorAxisAzimuth 16.0124  majorAxisRotation 22.649
+FOCALMECH  Hyp  51.851920 -177.972573 5.484730 Mech  0 0 0 mf  0 nObs -1
+END_NLLOC
+
+NLLOC "./loc/taka.20230212.084339.grid0" "LOCATED" "Location completed."
+PUBLIC_ID None
+SIGNATURE "Alaska Volcano Observatory   obs:./obs/96116213.obs   NLLoc:v7.00.13(17Jan2022)   run:07Aug2025 00h07m09"
+COMMENT "Takawangha earthquake swarm, February 12, 2023"
+GRID  101 101 51  -50.5 -50.5 -5  1 1 1 PROB_DENSITY
+SEARCH OCTREE nInitial 4400 nEvaluated 20024 smallestNodeSide 0.039062/0.039062/0.035511 oct_tree_integral 5.877641e-01 scatter_volume 5.877641e-01
+HYPOCENTER  x 2.17578 y 1.04297 z 4.42827  OT 37.6309  ix -1 iy -1 iz -1 MAXIMUM_LIKELIHOOD
+GEOGRAPHIC  OT 2023 02 12  08 43 37.630886  Lat 51.882373 Long -177.974405 Depth 4.428267
+QUALITY  Pmax 2.29323e+12 MFmin 13.3473 MFmax 14.5096 RMS 0.0140182 Nphs 6 Gap 182.058 Dist 1.99663 Mamp -9.90 0 Mdur -9.90 0
+VPVSRATIO  VpVsRatio 0.5  Npair 2  Diff 1.52
+STATISTICS  ExpectX 1.781857 Y 1.173112 Z 4.164221  CovXX 12.1349 XY 7.32147 XZ 0.282157 YY 26.6543 YZ 4.95119 ZZ 8.814 EllAz1  128.944 Dip1  54.0853 Len1  4.8701 Az2  283.6 Dip2  33.2074 Len2  5.99275 Len3  1.041194e+01
+STAT_GEOG  ExpectLat 51.883542 Long -177.980125 Depth 4.164221
+TRANSFORM  SDC LatOrig 51.873000  LongOrig -178.006000  RotCW 0.000000
+QML_OriginQuality  assocPhCt 6  usedPhCt 6  assocStaCt -1  usedStaCt 4  depthPhCt -1  stdErr 0.0140182  azGap 182.058  secAzGap 265.206  gtLevel -  minDist 1.99663 maxDist 15.0273 medDist 9.59659
+QML_OriginUncertainty  horUnc -1  minHorUnc 4.57093  maxHorUnc 8.2657  azMaxHorUnc 22.6214
+QML_ConfidenceEllipsoid  semiMajorAxisLength 10.4119  semiMinorAxisLength 4.8701  semiIntermediateAxisLength 5.99275  majorAxisPlunge 12.127  majorAxisAzimuth 21.6855  majorAxisRotation 58.3445
+FOCALMECH  Hyp  51.882373 -177.974405 4.428267 Mech  0 0 0 mf  0 nObs -1
+END_NLLOC
+
+NLLOC "./loc/taka.20230212.123433.grid0" "LOCATED" "Location completed."
+PUBLIC_ID None
+SIGNATURE "Alaska Volcano Observatory   obs:./obs/96116238.obs   NLLoc:v7.00.13(17Jan2022)   run:07Aug2025 00h07m10"
+COMMENT "Takawangha earthquake swarm, February 12, 2023"
+GRID  101 101 51  -50.5 -50.5 -5  1 1 1 PROB_DENSITY
+SEARCH OCTREE nInitial 4400 nEvaluated 20008 smallestNodeSide 0.039062/0.039062/0.035511 oct_tree_integral 2.123693e-01 scatter_volume 2.119336e-01
+HYPOCENTER  x 1.51172 y -2.39453 z 5.38707  OT 31.9255  ix -1 iy -1 iz -1 MAXIMUM_LIKELIHOOD
+GEOGRAPHIC  OT 2023 02 12  12 34 31.925486  Lat 51.851481 Long -177.984055 Depth 5.387074
+QUALITY  Pmax 4.92764e+21 MFmin 21.5833 MFmax 21.6512 RMS 0.0385032 Nphs 9 Gap 110.422 Dist 4.26121 Mamp -9.90 0 Mdur -9.90 0
+VPVSRATIO  VpVsRatio 2.57147  Npair 4  Diff 1.23
+STATISTICS  ExpectX 1.649737 Y -1.741062 Z 5.784663  CovXX 0.044205 XY 0.102067 XZ -0.0203129 YY 0.522648 YZ 0.190296 ZZ 1.04886 EllAz1  102.752 Dip1  3.4378 Len1  0.264742 Az2  193.851 Dip2  17.7027 Len2  1.3088 Len3  1.980012e+00
+STAT_GEOG  ExpectLat 51.857354 Long -177.982050 Depth 5.784663
+TRANSFORM  SDC LatOrig 51.873000  LongOrig -178.006000  RotCW 0.000000
+QML_OriginQuality  assocPhCt 11  usedPhCt 9  assocStaCt -1  usedStaCt 5  depthPhCt -1  stdErr 0.0385032  azGap 110.422  secAzGap 198.293  gtLevel -  minDist 4.26121 maxDist 12.3734 medDist 11.11
+QML_OriginUncertainty  horUnc -1  minHorUnc 0.231698  maxHorUnc 1.11807  azMaxHorUnc 11.553
+QML_ConfidenceEllipsoid  semiMajorAxisLength 1.98001  semiMinorAxisLength 0.264742  semiIntermediateAxisLength 1.3088  majorAxisPlunge 71.9447  majorAxisAzimuth 2.13264  majorAxisRotation 346.282
+FOCALMECH  Hyp  51.851481 -177.984055 5.387074 Mech  0 0 0 mf  0 nObs -1
+END_NLLOC
+
+NLLOC "./loc/taka.20230212.132242.grid0" "LOCATED" "Location completed."
+PUBLIC_ID None
+SIGNATURE "Alaska Volcano Observatory   obs:./obs/96116253.obs   NLLoc:v7.00.13(17Jan2022)   run:07Aug2025 00h07m11"
+COMMENT "Takawangha earthquake swarm, February 12, 2023"
+GRID  101 101 51  -50.5 -50.5 -5  1 1 1 PROB_DENSITY
+SEARCH OCTREE nInitial 4400 nEvaluated 20000 smallestNodeSide 0.039062/0.039062/0.035511 oct_tree_integral 3.902705e-01 scatter_volume 3.902705e-01
+HYPOCENTER  x 1.72656 y -0.0703125 z 2.06676  OT 41.319  ix -1 iy -1 iz -1 MAXIMUM_LIKELIHOOD
+GEOGRAPHIC  OT 2023 02 12  13 22 41.318967  Lat 51.872368 Long -177.980931 Depth 2.066761
+QUALITY  Pmax 2.78737e+21 MFmin 21.4245 MFmax 21.6624 RMS 0.0394869 Nphs 9 Gap 219.873 Dist 5.85892 Mamp -9.90 0 Mdur -9.90 0
+VPVSRATIO  VpVsRatio 2.00796  Npair 4  Diff 1.49
+STATISTICS  ExpectX 1.582187 Y -0.512619 Z 3.440577  CovXX 0.0480183 XY 0.131392 XZ -0.191729 YY 0.670985 YZ -0.248548 ZZ 2.827 EllAz1  280.222 Dip1  -2.94257 Len1  0.224767 Az2  189.844 Dip2  -7.3066 Len2  1.52803 Len3  3.183078e+00
+STAT_GEOG  ExpectLat 51.868393 Long -177.983028 Depth 3.440577
+TRANSFORM  SDC LatOrig 51.873000  LongOrig -178.006000  RotCW 0.000000
+QML_OriginQuality  assocPhCt 11  usedPhCt 9  assocStaCt -1  usedStaCt 5  depthPhCt -1  stdErr 0.0394869  azGap 219.873  secAzGap 219.873  gtLevel -  minDist 5.85892 maxDist 14.1581 medDist 13.1422
+QML_OriginUncertainty  horUnc -1  minHorUnc 0.222063  maxHorUnc 1.26665  azMaxHorUnc 11.4357
+QML_ConfidenceEllipsoid  semiMajorAxisLength 3.18308  semiMinorAxisLength 0.224767  semiIntermediateAxisLength 1.52803  majorAxisPlunge -82.1171  majorAxisAzimuth 32.0146  majorAxisRotation 157.246
+FOCALMECH  Hyp  51.872368 -177.980931 2.066761 Mech  0 0 0 mf  0 nObs -1
+END_NLLOC
+
+NLLOC "./loc/taka.20230212.140305.grid0" "LOCATED" "Location completed."
+PUBLIC_ID None
+SIGNATURE "Alaska Volcano Observatory   obs:./obs/96116273.obs   NLLoc:v7.00.13(17Jan2022)   run:07Aug2025 00h07m13"
+COMMENT "Takawangha earthquake swarm, February 12, 2023"
+GRID  101 101 51  -50.5 -50.5 -5  1 1 1 PROB_DENSITY
+SEARCH OCTREE nInitial 4400 nEvaluated 20000 smallestNodeSide 0.039062/0.039062/0.035511 oct_tree_integral 5.111591e-01 scatter_volume 5.050371e-01
+HYPOCENTER  x 1.08203 y -2.08203 z 3.86009  OT 4.21291  ix -1 iy -1 iz -1 MAXIMUM_LIKELIHOOD
+GEOGRAPHIC  OT 2023 02 12  14 03 4.212915  Lat 51.854290 Long -177.990292 Depth 3.860085
+QUALITY  Pmax 1.13431e+17 MFmin 18.6499 MFmax 18.7581 RMS 0.0386564 Nphs 8 Gap 146.47 Dist 4.05089 Mamp -9.90 0 Mdur -9.90 0
+VPVSRATIO  VpVsRatio 2.08889  Npair 3  Diff 1.48
+STATISTICS  ExpectX 1.566725 Y -0.628547 Z 3.022353  CovXX 0.430407 XY 0.567906 XZ -0.539208 YY 1.57926 YZ -0.863129 ZZ 2.3246 EllAz1  288.42 Dip1  -6.34909 Len1  0.792744 Az2  193.6 Dip2  -37.0625 Len2  1.92151 Len3  3.313503e+00
+STAT_GEOG  ExpectLat 51.867352 Long -177.983253 Depth 3.022353
+TRANSFORM  SDC LatOrig 51.873000  LongOrig -178.006000  RotCW 0.000000
+QML_OriginQuality  assocPhCt 10  usedPhCt 8  assocStaCt -1  usedStaCt 5  depthPhCt -1  stdErr 0.0386564  azGap 146.47  secAzGap 240.853  gtLevel -  minDist 4.05089 maxDist 12.6415 medDist 10.6783
+QML_OriginUncertainty  horUnc -1  minHorUnc 0.673246  maxHorUnc 2.04181  azMaxHorUnc 22.3365
+QML_ConfidenceEllipsoid  semiMajorAxisLength 3.3135  semiMinorAxisLength 0.792744  semiIntermediateAxisLength 1.92151  majorAxisPlunge -52.2115  majorAxisAzimuth 26.6711  majorAxisRotation 143.622
+FOCALMECH  Hyp  51.854290 -177.990292 3.860085 Mech  0 0 0 mf  0 nObs -1
+END_NLLOC
+
+NLLOC "./loc/taka.20230212.163036.grid0" "LOCATED" "Location completed."
+PUBLIC_ID None
+SIGNATURE "Alaska Volcano Observatory   obs:./obs/96116308.obs   NLLoc:v7.00.13(17Jan2022)   run:07Aug2025 00h07m14"
+COMMENT "Takawangha earthquake swarm, February 12, 2023"
+GRID  101 101 51  -50.5 -50.5 -5  1 1 1 PROB_DENSITY
+SEARCH OCTREE nInitial 4400 nEvaluated 20024 smallestNodeSide 0.039062/0.039062/0.035511 oct_tree_integral 3.987271e-01 scatter_volume 3.976443e-01
+HYPOCENTER  x 1.78516 y 0.105469 z 2.54616  OT 35.3078  ix -1 iy -1 iz -1 MAXIMUM_LIKELIHOOD
+GEOGRAPHIC  OT 2023 02 12  16 30 35.307825  Lat 51.873948 Long -177.980080 Depth 2.546165
+QUALITY  Pmax 1.16568e+17 MFmin 17.9049 MFmax 18.1552 RMS 0.037058 Nphs 8 Gap 164.572 Dist 2.81071 Mamp -9.90 0 Mdur -9.90 0
+VPVSRATIO  VpVsRatio 0.5  Npair 2  Diff 1.42
+STATISTICS  ExpectX 7.054277 Y 3.673606 Z 0.161969  CovXX 21.7015 XY 13.1302 XZ -7.719 YY 9.29343 YZ -5.59344 ZZ 6.65824 EllAz1  331.734 Dip1  12.3337 Len1  1.72717 Az2  272.047 Dip2  -66.577 Len2  3.46588 Len3  1.085910e+01
+STAT_GEOG  ExpectLat 51.906013 Long -177.903536 Depth 0.161969
+TRANSFORM  SDC LatOrig 51.873000  LongOrig -178.006000  RotCW 0.000000
+QML_OriginQuality  assocPhCt 8  usedPhCt 8  assocStaCt -1  usedStaCt 6  depthPhCt -1  stdErr 0.037058  azGap 164.572  secAzGap 222.486  gtLevel -  minDist 2.81071 maxDist 14.2969 medDist 11.2112
+QML_OriginUncertainty  horUnc -1  minHorUnc 1.49775  maxHorUnc 8.30933  azMaxHorUnc 57.6454
+QML_ConfidenceEllipsoid  semiMajorAxisLength 10.8591  semiMinorAxisLength 1.72717  semiIntermediateAxisLength 3.46588  majorAxisPlunge -19.5877  majorAxisAzimuth 57.2718  majorAxisRotation 163.286
+FOCALMECH  Hyp  51.873948 -177.980080 2.546165 Mech  0 0 0 mf  0 nObs -1
+END_NLLOC
+
+NLLOC "./loc/taka.20230212.212232.grid0" "LOCATED" "Location completed."
+PUBLIC_ID None
+SIGNATURE "Alaska Volcano Observatory   obs:./obs/96116348.obs   NLLoc:v7.00.13(17Jan2022)   run:07Aug2025 00h07m15"
+COMMENT "Takawangha earthquake swarm, February 12, 2023"
+GRID  101 101 51  -50.5 -50.5 -5  1 1 1 PROB_DENSITY
+SEARCH OCTREE nInitial 4400 nEvaluated 20048 smallestNodeSide 0.078125/0.078125/0.071023 oct_tree_integral 2.921824e+00 scatter_volume 2.920807e+00
+HYPOCENTER  x 1.25781 y -3.66406 z 8.45881  OT 30.7254  ix -1 iy -1 iz -1 MAXIMUM_LIKELIHOOD
+GEOGRAPHIC  OT 2023 02 12  21 22 30.725387  Lat 51.840073 Long -177.987744 Depth 8.458807
+QUALITY  Pmax 3.15244e+11 MFmin 13.4799 MFmax 14.5155 RMS 0.0418511 Nphs 6 Gap 204.485 Dist 3.59781 Mamp -9.90 0 Mdur -9.90 0
+VPVSRATIO  VpVsRatio 0.5  Npair 2  Diff 0.8
+STATISTICS  ExpectX 1.233295 Y -3.075289 Z 7.948248  CovXX 38.6991 XY -24.3357 XZ -1.5118 YY 60.1614 YZ 4.57783 ZZ 29.918 EllAz1  56.0039 Dip1  -10.1381 Len1  8.9344 Az2  86.0288 Dip2  78.3309 Len2  10.2344 Len3  1.643236e+01
+STAT_GEOG  ExpectLat 51.845364 Long -177.988098 Depth 7.948248
+TRANSFORM  SDC LatOrig 51.873000  LongOrig -178.006000  RotCW 0.000000
+QML_OriginQuality  assocPhCt 6  usedPhCt 6  assocStaCt -1  usedStaCt 4  depthPhCt -1  stdErr 0.0418511  azGap 204.485  secAzGap 248.201  gtLevel -  minDist 3.59781 maxDist 12.2566 medDist 11.7266
+QML_OriginUncertainty  horUnc -1  minHorUnc 7.24687  maxHorUnc 13.2235  azMaxHorUnc 146.898
+QML_ConfidenceEllipsoid  semiMajorAxisLength 16.4324  semiMinorAxisLength 8.9344  semiIntermediateAxisLength 10.2344  majorAxisPlunge -5.71759  majorAxisAzimuth 147.03  majorAxisRotation 190.391
+FOCALMECH  Hyp  51.840073 -177.987744 8.458807 Mech  0 0 0 mf  0 nObs -1
+END_NLLOC
+
+NLLOC "./loc/taka.20230212.225806.grid0" "LOCATED" "Location completed."
+PUBLIC_ID None
+SIGNATURE "Alaska Volcano Observatory   obs:./obs/96116363.obs   NLLoc:v7.00.13(17Jan2022)   run:07Aug2025 00h07m16"
+COMMENT "Takawangha earthquake swarm, February 12, 2023"
+GRID  101 101 51  -50.5 -50.5 -5  1 1 1 PROB_DENSITY
+SEARCH OCTREE nInitial 4400 nEvaluated 20008 smallestNodeSide 0.039062/0.039062/0.035511 oct_tree_integral 3.397847e-01 scatter_volume 3.397847e-01
+HYPOCENTER  x 2.42969 y -2.33594 z 5.12074  OT 4.76349  ix -1 iy -1 iz -1 MAXIMUM_LIKELIHOOD
+GEOGRAPHIC  OT 2023 02 12  22 58 4.763493  Lat 51.852008 Long -177.970730 Depth 5.120739
+QUALITY  Pmax 1.34525e+21 MFmin 21.6145 MFmax 21.6484 RMS 0.0463243 Nphs 9 Gap 122.154 Dist 5.11696 Mamp -9.90 0 Mdur -9.90 0
+VPVSRATIO  VpVsRatio 2.33177  Npair 4  Diff 1.21
+STATISTICS  ExpectX 2.661854 Y -1.533571 Z 5.740471  CovXX 0.0644033 XY 0.168714 XZ 0.118933 YY 0.779063 YZ 0.561717 ZZ 2.04393 EllAz1  102.815 Dip1  0.244837 Len1  0.306122 Az2  192.912 Dip2  21.549 Len2  1.44336 Len3  2.831167e+00
+STAT_GEOG  ExpectLat 51.859218 Long -177.967357 Depth 5.740471
+TRANSFORM  SDC LatOrig 51.873000  LongOrig -178.006000  RotCW 0.000000
+QML_OriginQuality  assocPhCt 9  usedPhCt 9  assocStaCt -1  usedStaCt 5  depthPhCt -1  stdErr 0.0463243  azGap 122.154  secAzGap 200.458  gtLevel -  minDist 5.11696 maxDist 12.0268 medDist 11.5332
+QML_OriginUncertainty  horUnc -1  minHorUnc 0.247235  maxHorUnc 1.37071  azMaxHorUnc 12.6372
+QML_ConfidenceEllipsoid  semiMajorAxisLength 2.83117  semiMinorAxisLength 0.306122  semiIntermediateAxisLength 1.44336  majorAxisPlunge 68.4494  majorAxisAzimuth 12.1951  majorAxisRotation 359.087
+FOCALMECH  Hyp  51.852008 -177.970730 5.120739 Mech  0 0 0 mf  0 nObs -1
+END_NLLOC
+
+NLLOC "./loc/taka.20230212.045020.grid0" "LOCATED" "Location completed."
+PUBLIC_ID None
+SIGNATURE "Alaska Volcano Observatory   obs:./obs/96116583.obs   NLLoc:v7.00.13(17Jan2022)   run:07Aug2025 00h07m17"
+COMMENT "Takawangha earthquake swarm, February 12, 2023"
+GRID  101 101 51  -50.5 -50.5 -5  1 1 1 PROB_DENSITY
+SEARCH OCTREE nInitial 4400 nEvaluated 20008 smallestNodeSide 0.039062/0.039062/0.035511 oct_tree_integral 4.720117e-01 scatter_volume 4.704621e-01
+HYPOCENTER  x 4.55859 y -0.792969 z 3.93111  OT 18.2628  ix -1 iy -1 iz -1 MAXIMUM_LIKELIHOOD
+GEOGRAPHIC  OT 2023 02 12  04 50 18.262799  Lat 51.865874 Long -177.939816 Depth 3.931108
+QUALITY  Pmax 2.54946e+18 MFmin 18.677 MFmax 18.8557 RMS 0.0352824 Nphs 8 Gap 163.98 Dist 4.83806 Mamp -9.90 0 Mdur -9.90 0
+VPVSRATIO  VpVsRatio 2.3125  Npair 3  Diff 0.84
+STATISTICS  ExpectX 4.544067 Y -1.039762 Z 4.193034  CovXX 0.073187 XY 0.106123 XZ -0.0853081 YY 0.607778 YZ -0.263098 ZZ 1.04219 EllAz1  279.737 Dip1  -2.28793 Len1  0.426447 Az2  188.602 Dip2  -26.3768 Len2  1.3177 Len3  2.040721e+00
+STAT_GEOG  ExpectLat 51.863656 Long -177.940028 Depth 4.193034
+TRANSFORM  SDC LatOrig 51.873000  LongOrig -178.006000  RotCW 0.000000
+QML_OriginQuality  assocPhCt 8  usedPhCt 8  assocStaCt -1  usedStaCt 5  depthPhCt -1  stdErr 0.0352824  azGap 163.98  secAzGap 219.143  gtLevel -  minDist 4.83806 maxDist 14.2208 medDist 10.3481
+QML_OriginUncertainty  horUnc -1  minHorUnc 0.348782  maxHorUnc 1.2019  azMaxHorUnc 10.8271
+QML_ConfidenceEllipsoid  semiMajorAxisLength 2.04072  semiMinorAxisLength 0.426447  semiIntermediateAxisLength 1.3177  majorAxisPlunge -63.5087  majorAxisAzimuth 14.3354  majorAxisRotation 171.511
+FOCALMECH  Hyp  51.865874 -177.939816 3.931108 Mech  0 0 0 mf  0 nObs -1
+END_NLLOC
+
