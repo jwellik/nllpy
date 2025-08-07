@@ -483,11 +483,8 @@ catalog = assign_picks(catalog, verbose=True)
 
 See the `examples/` directory for complete working examples:
 
-- `basic_usage.py` - Basic configuration and usage patterns
-- `volcano_monitoring.py` - Complete volcano monitoring setup
-- `spurr_alaska.py` - Earthquake location example at Mt Spurr volcano, Alaska
-- `quakeml_conversion_example.py` - QuakeML to NonLinLoc conversion examples
-- `fdsn_events_example.py` - FDSN event fetching and conversion examples
+- `nll_spurr/spurr_alaska.py` - Earthquake location example at Mt Spurr volcano, Alaska
+- `nll_taka/taka_from_scrath.sh` - Earthquake location example at Takawangha, Alaska
 
 ## Command Line Reference
 
@@ -597,9 +594,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For questions, issues, or feature requests, please:
 
-1. Check the [documentation](https://pynlloc.readthedocs.io/)
-2. Search existing [issues](https://github.com/jwellik/pynlloc/issues)
-3. Create a new issue with a clear description of your problem
+1. Search existing [issues](https://github.com/jwellik/nllpy/issues)
+2. Create a new issue with a clear description of your problem
 
 ---
 
