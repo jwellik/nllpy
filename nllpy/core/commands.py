@@ -186,9 +186,16 @@ class EQSTACommand:
     error_report_type: str = "GAU"
     error_report: float = 0.0
     prob_active: float = 1.0
+    sta_fmt: str = "STA"
 
     def __str__(self) -> str:
-        return f"EQSTA  {self.label:<5s}  {self.phase}  {self.error_type}  {self.error}  {self.error_report_type}  {self.error_report}  {self.prob_active}"
+        # Adjust field width based on station format
+        if self.sta_fmt in ["NET.STA", "NET_STA"]:
+            field_width = 8
+        else:
+            field_width = 5
+
+        return f"EQSTA  {self.label:<{field_width}s}  {self.phase}  {self.error_type}  {self.error}  {self.error_report_type}  {self.error_report}  {self.prob_active}"
 
 @dataclass
 class LayerCommand:

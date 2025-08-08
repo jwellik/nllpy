@@ -62,6 +62,44 @@ class NLLocConfig:
             )
         )
 
+    def _add_station_to_eqsta(self, station_data: str, p_error: float = 0.0, s_error: float = 0.0, sta_fmt: str = "STA"):
+        """
+        Helper method to add a station to EQSTA commands (P and S phases)
+        
+        Args:
+            station_code: Station code
+            p_error: P phase timing error in seconds (default: 0.0)
+            s_error: S phase timing error in seconds (default: 0.0)
+        """
+        # P phase
+
+        self.eqsta_commands.append(
+            EQSTACommand(
+                label=station_data['code'],
+                phase="P",
+                error_type="GAU",
+                error=p_error,
+                error_report_type="GAU",
+                error_report=p_error,
+                prob_active=1.0,
+                sta_fmt=sta_fmt,
+            )
+        )
+        # S phase
+        self.eqsta_commands.append(
+            EQSTACommand(
+                label=station_data['code'],
+                phase="S",
+                error_type="GAU",
+                error=s_error,
+                error_report_type="GAU",
+                error_report=s_error,
+                prob_active=1.0,
+                sta_fmt=sta_fmt,
+            )
+        )
+
+    # TODO Is this code used?
     def _add_eqsta_for_station(self, station_code: str, p_error: float = 0.0, s_error: float = 0.0):
         """
         Helper method to add EQSTA commands for a station (P and S phases)
@@ -256,8 +294,7 @@ class NLLocConfig:
         # Add stations to configuration using helper method
         for station_data in station_list:
             self._add_station_to_gtsrce(station_data, sta_fmt=sta_fmt)
-            if add_eqsta:
-                self._add_eqsta_for_station(station_data['code'])
+            self._add_station_to_eqsta(station_data, sta_fmt=sta_fmt)
         
         # Create result summary
         result = {
@@ -321,6 +358,7 @@ class NLLocConfig:
         result['output_file'] = filename
         return result
 
+    # TODO Is this code used?
     def add_eqsta_errors(self, station_errors: Dict[str, Dict[str, tuple]]):
         """
         Add EQSTA error definitions for stations
@@ -366,6 +404,7 @@ class NLLocConfig:
                 )
             )
 
+    # TODO Is this code used?
     def add_eqsta_single(self, label: str, phase: str = "P", error_type: str = "GAU",
                          error: float = 0.0, error_report_type: str = "GAU",
                          error_report: float = 0.0, prob_active: float = 1.0):
@@ -393,7 +432,8 @@ class NLLocConfig:
             )
         )
 
-    def add_station(self, code: str, lat: float, lon: float, elev: float, depth_corr: float = 0.0, add_eqsta: bool = True):
+    def add_station(self, code: str, lat: float, lon: float, elev: float, depth_corr: float = 0.0,
+                    error_type="GAU", error: float = 0.0, error_report_type: str = "GAU", error_report: float = 0.0, prob_active: float = 1.0):
         """
         Add a single station
         
@@ -414,8 +454,29 @@ class NLLocConfig:
             depth_corr=depth_corr
         ))
 
-        if add_eqsta:
-            self._add_eqsta_for_station(code)
+        self.eqsta_commands.append(
+            EQSTACommand(
+                label=code,
+                phase="P",
+                error_type=error_type,
+                error=error,
+                error_report_type=error_report_type,
+                error_report=error_report,
+                prob_active=prob_active
+            )
+        )
+
+        self.eqsta_commands.append(
+            EQSTACommand(
+                label=code,
+                phase="S",
+                error_type=error_type,
+                error=error,
+                error_report_type=error_report_type,
+                error_report=error_report,
+                prob_active=prob_active
+            )
+        )
 
     def get_eqsta_section(self) -> str:
         """Get EQSTA commands for all stations"""
@@ -427,7 +488,7 @@ class NLLocConfig:
             lines.append(str(eqsta))
         return "\n".join(lines)
 
-    def add_station_from_inventory(self, inventory_file: str, sta_fmt: str = "STA", add_eqsta: bool = True):
+    def add_station_from_inventory(self, inventory_file: str, sta_fmt: str = "STA"):
         """
         Add stations from inventory file
         
@@ -436,13 +497,13 @@ class NLLocConfig:
             sta_fmt: Station code format - "STA" for station only, "NET.STA" for network.station, "NET_STA" for network_station
             add_eqsta: Whether to automatically add EQSTA commands for P and S phases (default: True)
         """
+
         stations = parse_inventory(inventory_file, sta_fmt=sta_fmt)
         for station_data in stations:
             self._add_station_to_gtsrce(station_data, sta_fmt=sta_fmt)
-            if add_eqsta:
-                self._add_eqsta_for_station(station_data['code'])
+            self._add_station_to_eqsta(station_data, sta_fmt=sta_fmt)
 
-    def add_station_from_fdsn(self, fdsn_file: str, sta_fmt: str = "STA", add_eqsta: bool = True):
+    def add_station_from_fdsn(self, fdsn_file: str, sta_fmt: str = "STA"):
         """
         Add stations from FDSN format file
         
@@ -456,8 +517,7 @@ class NLLocConfig:
         stations = _parse_fdsn_inventory(fdsn_file, sta_fmt=sta_fmt)
         for station_data in stations:
             self._add_station_to_gtsrce(station_data, sta_fmt=sta_fmt)
-            if add_eqsta:
-                self._add_eqsta_for_station(station_data['code'])
+            self._add_station_to_eqsta(station_data, sta_fmt=sta_fmt)
 
     def get_gtsrce_section(self) -> str:
         """Get GTSRCE commands for all stations"""

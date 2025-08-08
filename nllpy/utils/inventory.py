@@ -61,10 +61,14 @@ def _parse_stationxml(inventory_file: str, sta_fmt: str = "STA") -> List[Dict]:
             depth = -elev / 1000.0  # Convert m to km, flip sign
 
             # Choose station code format based on preference
-            if sta_fmt == "NET.STA" and net_code:
+            if sta_fmt == "NET.STA":
                 code = f"{net_code}.{sta_code}"
-            elif sta_fmt == "NET_STA" and net_code:
+            elif sta_fmt == "NET_STA":
                 code = f"{net_code}_{sta_code}"
+            elif sta_fmt == "NET.STA.LOC":
+                code = f"{net_code}.{sta_code}."
+            elif sta_fmt == "NET_STA_LOC":
+                code = f"{net_code}_{sta_code}_"
             else:
                 code = sta_code
 
@@ -148,6 +152,10 @@ def _parse_fdsn_inventory(inventory_file: str, sta_fmt: str = "STA") -> List[Dic
                         code = f"{net_code}.{sta_code}"
                     elif sta_fmt == "NET_STA":
                         code = f"{net_code}_{sta_code}"
+                    elif sta_fmt == "NET.STA.LOC":
+                        code = f"{net_code}.{sta_code}."
+                    elif sta_fmt == "NET_STA_LOC":
+                        code = f"{net_code}_{sta_code}_"
                     else:
                         code = sta_code
                     
