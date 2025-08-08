@@ -189,7 +189,8 @@ class NLLocConfig:
                                  channels: Optional[List[str]] = None,
                                  starttime: Optional[str] = None,
                                  endtime: Optional[str] = None,
-                                 level: str = "station") -> Dict:
+                                 level: str = "station",
+                                 add_eqsta: bool = False) -> Dict:
         """
         Create configuration by downloading stations from FDSN URL
         
@@ -207,6 +208,7 @@ class NLLocConfig:
             starttime: Start time for station availability (optional, format: "YYYY-MM-DD")
             endtime: End time for station availability (optional, format: "YYYY-MM-DD")
             level: Inventory level ("network", "station", "channel", "response")
+            add_eqsta: Whether to automatically add EQSTA commands for P and S phases (default: False)
             
         Returns:
             Dictionary with download results and station count
@@ -254,6 +256,8 @@ class NLLocConfig:
         # Add stations to configuration using helper method
         for station_data in station_list:
             self._add_station_to_gtsrce(station_data, sta_fmt=sta_fmt)
+            if add_eqsta:
+                self._add_eqsta_for_station(station_data['code'])
         
         # Create result summary
         result = {
@@ -389,8 +393,18 @@ class NLLocConfig:
             )
         )
 
-    def add_station(self, code: str, lat: float, lon: float, elev: float, depth_corr: float = 0.0):
-        """Add a single station"""
+    def add_station(self, code: str, lat: float, lon: float, elev: float, depth_corr: float = 0.0, add_eqsta: bool = True):
+        """
+        Add a single station
+        
+        Args:
+            code: Station code
+            lat: Station latitude
+            lon: Station longitude
+            elev: Station elevation
+            depth_corr: Depth correction
+            add_eqsta: Whether to automatically add EQSTA commands for P and S phases (default: True)
+        """
 
         self.gtsrce_stations.append(GTSrceCommand(
             label=code,
@@ -400,18 +414,8 @@ class NLLocConfig:
             depth_corr=depth_corr
         ))
 
-        # Add default EQSTA command for P phase
-        self.eqsta_commands.append(
-            EQSTACommand(
-                label=code,
-                phase="P",
-                error_type="GAU",
-                error=0.0,
-                error_report_type="GAU",
-                error_report=0.0,
-                prob_active=1.0
-            )
-        )
+        if add_eqsta:
+            self._add_eqsta_for_station(code)
 
     def get_eqsta_section(self) -> str:
         """Get EQSTA commands for all stations"""
@@ -423,31 +427,37 @@ class NLLocConfig:
             lines.append(str(eqsta))
         return "\n".join(lines)
 
-    def add_station_from_inventory(self, inventory_file: str, sta_fmt: str = "STA"):
+    def add_station_from_inventory(self, inventory_file: str, sta_fmt: str = "STA", add_eqsta: bool = True):
         """
         Add stations from inventory file
         
         Args:
             inventory_file: Path to inventory file
             sta_fmt: Station code format - "STA" for station only, "NET.STA" for network.station, "NET_STA" for network_station
+            add_eqsta: Whether to automatically add EQSTA commands for P and S phases (default: True)
         """
         stations = parse_inventory(inventory_file, sta_fmt=sta_fmt)
         for station_data in stations:
             self._add_station_to_gtsrce(station_data, sta_fmt=sta_fmt)
+            if add_eqsta:
+                self._add_eqsta_for_station(station_data['code'])
 
-    def add_station_from_fdsn(self, fdsn_file: str, sta_fmt: str = "STA"):
+    def add_station_from_fdsn(self, fdsn_file: str, sta_fmt: str = "STA", add_eqsta: bool = True):
         """
         Add stations from FDSN format file
         
         Args:
             fdsn_file: Path to FDSN format file (NET|STA|LAT|LON|ELEV|SITENAME|START|END)
             sta_fmt: Station code format - "STA" for station only, "NET.STA" for network.station, "NET_STA" for network_station
+            add_eqsta: Whether to automatically add EQSTA commands for P and S phases (default: True)
         """
         from ..utils.inventory import _parse_fdsn_inventory
         
         stations = _parse_fdsn_inventory(fdsn_file, sta_fmt=sta_fmt)
         for station_data in stations:
             self._add_station_to_gtsrce(station_data, sta_fmt=sta_fmt)
+            if add_eqsta:
+                self._add_eqsta_for_station(station_data['code'])
 
     def get_gtsrce_section(self) -> str:
         """Get GTSRCE commands for all stations"""
@@ -855,9 +865,9 @@ class NLLocConfig:
                                 prob_active=prob_active
                             )
             else:
-                # Local file
-                self.add_station_from_inventory(kwargs['inventory'], sta_fmt=sta_fmt)
-                # Add EQSTA commands for all stations
+                # Local file - disable automatic EQSTA generation since we'll add custom ones
+                self.add_station_from_inventory(kwargs['inventory'], sta_fmt=sta_fmt, add_eqsta=False)
+                # Add EQSTA commands for all stations with custom parameters
                 for station in self.gtsrce_stations:
                     if 'P' in phases:
                         self.add_eqsta_single(
