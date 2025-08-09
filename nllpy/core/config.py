@@ -598,8 +598,13 @@ class NLLocConfig:
         ]
         return '\n'.join(lines)
 
-    def write_complete_control_file(self, filename: str):
+    def write_complete_control_file(self, filename=None):
         """Write complete control file"""
+        
+        if filename is None:
+            import os
+            filename = os.path.join(self.nll_home, self.filename)
+        
         sections = [
 
             # Basic commands
@@ -982,6 +987,25 @@ class NLLocConfig:
             self.setup_basic_velocity_model()
 
     def run_nlloc(self):
+        # Add documentation
+        """
+        Run NLLoc
+
+        This method will create the necessary directories and files to run NLLoc.
+        It will also write the control file and run the NLLoc program.
+        NonLinLoc must be installed/compiled and in the path.
+
+        Args:
+            None
+
+        Returns:
+            None
+        """
+
+        import shutil
+        if not shutil.which("NLLoc"):
+            print("NLLoc is not in the path")
+            return
 
         import os
 
@@ -989,25 +1013,14 @@ class NLLocConfig:
 
         print(f"Creating directories in {self.nll_home}")
 
-        os.mkdir(self.nll_home, exist_ok=True)
-
-        # Create velocity model directory
-        os.mkdir(os.path.join(self.nll_home, self.velocity_path), exist_ok=True)
-
-        # Create time model directory
-        os.mkdir(os.path.join(self.nll_home, self.time_path), exist_ok=True)
-
-        # Create synth directory
-        os.mkdir(os.path.join(self.nll_home, self.synth_path), exist_ok=True)
-
-        # Create obs directory
-        os.mkdir(os.path.join(self.nll_home, self.input_obs[0]), exist_ok=True)
-
-        # Create output directory
-        os.mkdir(os.path.join(self.nll_home, self.output_obs), exist_ok=True)
-
-        # Write control file
-        self.write_complete_control_file(os.path.join(self.nll_home, self.filename))
+        # Create directories and files
+        os.makedirs(self.nll_home, exist_ok=True)  # Create home directory
+        os.makedirs(os.path.join(self.nll_home, self.velocity_path), exist_ok=True)  # Create velocity model directory
+        os.makedirs(os.path.join(self.nll_home, self.time_path), exist_ok=True)  # Create time model directory
+        os.makedirs(os.path.join(self.nll_home, self.synth_path), exist_ok=True)  # Create synth directory
+        os.makedirs(os.path.join(self.nll_home, self.input_obs[0]), exist_ok=True) # Create obs directory
+        os.makedirs(os.path.join(self.nll_home, self.output_obs), exist_ok=True)  # Create output directory
+        self.write_complete_control_file(os.path.join(self.nll_home, self.filename))  # Write control file
 
         import subprocess
 
