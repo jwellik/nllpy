@@ -22,6 +22,8 @@ def create_volcano_config(lat_orig: float, lon_orig: float, **kwargs) -> NLLocCo
     """
     config = NLLocConfig()
 
+    config.filename = "volcano.in"
+
     # Coordinate system
     config.trans.transformation = "SDC"
     config.trans.lat_orig = lat_orig

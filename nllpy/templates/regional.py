@@ -22,6 +22,8 @@ def create_regional_config(lat_orig: float, lon_orig: float, **kwargs) -> NLLocC
     """
     config = NLLocConfig()
 
+    config.filename = "regional.in"
+
     # Regional coordinate system
     config.trans.transformation = "LAMBERT"
     config.trans.lat_orig = lat_orig

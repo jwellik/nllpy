@@ -20,11 +20,13 @@ class NLLocConfig:
         self.trans = TransCommand()
         self.vgtype = ['P']  # TODO Make this a command?
         self.eqvpvs = 1.73  # TODO Make this a command?
-        self.velocity_path = "./model/layer"  # TODO Make this a command?
-        self.time_path = "./time/layer"  # TODO Make this a command?
-        self.synth_path = "./obs_synth/synth.obs"  # TODO Make this a command?
-        self.input_obs = ("./obs/*.obs", "NLLOC_OBS")  # TODO Make this a command?
-        self.output_obs = "./loc/volcano"  # TODO Make this a command?
+        self.nll_home = "./"
+        self.filename = "control.in"
+        self.velocity_path = "model/layer"  # TODO Make this a command?
+        self.time_path = "time/layer"  # TODO Make this a command?
+        self.synth_path = "obs_synth/synth.obs"  # TODO Make this a command?
+        self.input_obs = ("obs/*.obs", "NLLOC_OBS")  # TODO Make this a command?
+        self.output_obs = "loc/volcano"  # TODO Make this a command?
         self.lochypout = ["SAVE_NLLOC_ALL", "SAVE_NLLOC_SUM", "SAVE_HYPO71_SUM"]  # TODO Make this a command?
         self.vggrid = VelGridCommand()
         self.locgrid = LocGridCommand()
@@ -978,3 +980,42 @@ class NLLocConfig:
         else:
             # Default to basic model
             self.setup_basic_velocity_model()
+
+    def run_nlloc(self):
+
+        import os
+
+        print(f"Running NLLoc in {self.nll_home}")
+
+        print(f"Creating directories in {self.nll_home}")
+
+        os.mkdir(self.nll_home, exist_ok=True)
+
+        # Create velocity model directory
+        os.mkdir(os.path.join(self.nll_home, self.velocity_path), exist_ok=True)
+
+        # Create time model directory
+        os.mkdir(os.path.join(self.nll_home, self.time_path), exist_ok=True)
+
+        # Create synth directory
+        os.mkdir(os.path.join(self.nll_home, self.synth_path), exist_ok=True)
+
+        # Create obs directory
+        os.mkdir(os.path.join(self.nll_home, self.input_obs[0]), exist_ok=True)
+
+        # Create output directory
+        os.mkdir(os.path.join(self.nll_home, self.output_obs), exist_ok=True)
+
+        # Write control file
+        self.write_complete_control_file(os.path.join(self.nll_home, self.filename))
+
+        import subprocess
+
+        print("Running Vel2Grid")
+        subprocess.run(["Vel2Grid", os.path.join(self.nll_home, self.filename)])
+        print("Running Grid2Time")
+        subprocess.run(["Grid2Time", os.path.join(self.nll_home, self.filename)])
+        print("Running NLLoc")
+        subprocess.run(["NLLoc", os.path.join(self.nll_home, self.filename)])
+
+        print("Done.")
