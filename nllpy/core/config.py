@@ -5,6 +5,7 @@
 Main configuration class for NLLoc
 """
 
+import os
 from typing import List, Dict, Optional
 from pathlib import Path
 
@@ -338,6 +339,9 @@ class NLLocConfig:
             **kwargs
         )
         
+        # Create all necessary directories
+        Path(filename).parent.mkdir(parents=True, exist_ok=True)
+        
         # Save to file in FDSN format
         with open(filename, 'w') as f:
             f.write("# FDSN Station List\n")
@@ -500,7 +504,8 @@ class NLLocConfig:
             add_eqsta: Whether to automatically add EQSTA commands for P and S phases (default: True)
         """
 
-        stations = parse_inventory(inventory_file, sta_fmt=sta_fmt)
+        if not os.path.isfile(inventory_file):
+            stations = parse_inventory(inventory_file, sta_fmt=sta_fmt)
         for station_data in stations:
             self._add_station_to_gtsrce(station_data, sta_fmt=sta_fmt)
             self._add_station_to_eqsta(station_data, sta_fmt=sta_fmt)
@@ -605,6 +610,9 @@ class NLLocConfig:
             import os
             filename = os.path.join(self.nll_home, self.filename)
         
+        # Create all necessary directories
+        Path(filename).parent.mkdir(parents=True, exist_ok=True)
+        
         sections = [
 
             # Basic commands
@@ -661,6 +669,10 @@ class NLLocConfig:
     def write_scp_control_file(self, filename: str):
         """Write control file for usage in SeisComP
         (https://www.seiscomp.de/doc/apps/global_nonlinloc.html)"""
+        
+        # Create all necessary directories
+        Path(filename).parent.mkdir(parents=True, exist_ok=True)
+        
         sections = [
             # Basic commands
             self.get_basic_commands(),
@@ -987,7 +999,6 @@ class NLLocConfig:
             self.setup_basic_velocity_model()
 
     def run_nlloc(self):
-        # Add documentation
         """
         Run NLLoc
 
@@ -1017,11 +1028,20 @@ class NLLocConfig:
         os.makedirs(self.nll_home, exist_ok=True)  # Create home directory
         os.makedirs(os.path.join(self.nll_home, self.velocity_path), exist_ok=True)  # Create velocity model directory
         os.makedirs(os.path.join(self.nll_home, self.time_path), exist_ok=True)  # Create time model directory
-        os.makedirs(os.path.join(self.nll_home, self.synth_path), exist_ok=True)  # Create synth directory
-        os.makedirs(os.path.join(self.nll_home, self.input_obs[0]), exist_ok=True) # Create obs directory
+        # Create synth directory (extract directory from synth_path)
+        synth_dir = Path(self.synth_path).parent
+        if synth_dir != Path('.'):
+            os.makedirs(os.path.join(self.nll_home, str(synth_dir)), exist_ok=True)
+        # Create obs directory (extract directory from input_obs path)
+        obs_dir = Path(self.input_obs[0]).parent
+        if obs_dir != Path('.'):
+            os.makedirs(os.path.join(self.nll_home, str(obs_dir)), exist_ok=True)
         os.makedirs(os.path.join(self.nll_home, self.output_obs), exist_ok=True)  # Create output directory
+        
+        # Write control file
         self.write_complete_control_file(os.path.join(self.nll_home, self.filename))  # Write control file
 
+        # Run NonLinLoc programs
         import subprocess
 
         print("Running Vel2Grid")

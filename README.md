@@ -104,6 +104,7 @@ import nllpy
 # Create volcano monitoring configuration
 config = nllpy.create_volcano_config(lat_orig=46.51, lon_orig=8.48)
 config.add_station_from_inventory("stations.xml")  # Uses station codes only
+# Note: EQSTA commands are automatically generated when using inventory files
 config.write_complete_control_file("volcano_location.in")
 
 # Use network.station format if needed

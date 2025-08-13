@@ -10,12 +10,12 @@ from typing import List, Dict
 from pathlib import Path
 
 
-def parse_inventory(inventory_file: str, sta_fmt: str = "STA") -> List[Dict]:
+def parse_inventory(inventory, sta_fmt: str = "STA") -> List[Dict]:
     """
     Parse station inventory from various formats
 
     Args:
-        inventory_file: Path to inventory file (XML or text)
+        inventory_file: ObsPy inventory object or path to inventory file (XML or text)
         sta_fmt: Station code format - "STA" for station only, "NET.STA" for network.station, "NET_STA" for network_station
 
     Returns:
