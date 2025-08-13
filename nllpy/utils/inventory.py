@@ -3,9 +3,12 @@
 # =============================================================================
 """
 Station inventory parsing utilities
+
+This module provides utilities for parsing station inventories from various formats.
+For XML files (StationXML), use ObsPy's read_inventory() function directly.
+This module handles text-based formats like FDSN and simple space-separated formats.
 """
 
-import xml.etree.ElementTree as ET
 from typing import List, Dict
 from pathlib import Path
 
@@ -15,7 +18,8 @@ def parse_inventory(inventory, sta_fmt: str = "STA") -> List[Dict]:
     Parse station inventory from various formats (non-XML files only)
     
     For XML files, use ObsPy's read_inventory() directly or pass an ObsPy Inventory object
-    to add_station_from_inventory().
+    to add_station_from_inventory(). This function handles text-based formats like FDSN
+    and simple space-separated formats.
 
     Args:
         inventory: Path to inventory file (text formats only, not XML)
@@ -35,51 +39,6 @@ def parse_inventory(inventory, sta_fmt: str = "STA") -> List[Dict]:
     except ValueError:
         # Fall back to simple text format
         return _parse_simple_inventory(inventory)
-
-
-def _parse_stationxml(inventory_file: str, sta_fmt: str = "STA") -> List[Dict]:
-    """Parse StationXML format"""
-    tree = ET.parse(inventory_file)
-    root = tree.getroot()
-
-    # Handle namespace
-    namespace = {'': 'http://www.fdsn.org/xml/station/1'}
-    if root.tag.startswith('{'):
-        namespace = {'': root.tag.split('}')[0][1:]}
-
-    stations = []
-    for network in root.findall('.//Network', namespace):
-        net_code = network.get('code', '')
-        for station in network.findall('.//Station', namespace):
-            sta_code = station.get('code')
-            lat = float(station.find('Latitude', namespace).text)
-            lon = float(station.find('Longitude', namespace).text)
-            elev = float(station.find('Elevation', namespace).text)
-
-            # Convert elevation to depth (NLLoc uses depth below sea level)
-            depth = -elev / 1000.0  # Convert m to km, flip sign
-
-            # Choose station code format based on preference
-            if sta_fmt == "NET.STA":
-                code = f"{net_code}.{sta_code}"
-            elif sta_fmt == "NET_STA":
-                code = f"{net_code}_{sta_code}"
-            elif sta_fmt == "NET.STA.LOC":
-                code = f"{net_code}.{sta_code}."
-            elif sta_fmt == "NET_STA_LOC":
-                code = f"{net_code}_{sta_code}_"
-            else:
-                code = sta_code
-
-            stations.append({
-                'code': code,
-                'latitude': lat,
-                'longitude': lon,
-                'depth': depth,
-                'elevation': elev
-            })
-
-    return stations
 
 
 def _parse_simple_inventory(inventory_file: str) -> List[Dict]:
