@@ -127,3 +127,54 @@ def test_eqsta_phases_selection():
     
     assert len(config.eqsta_commands) == 1  # Only S phase
     assert config.eqsta_commands[0].phase == "S"
+
+
+def test_add_station_from_obspy_inventory():
+    """Test that add_station_from_inventory works with ObsPy Inventory objects"""
+    config = NLLocConfig()
+    
+    # Create a simple ObsPy Inventory object for testing
+    from obspy import Inventory, Network, Station, Channel
+    from obspy.core import UTCDateTime
+    
+    inv = Inventory(
+        networks=[
+            Network(
+                code="AV",
+                stations=[
+                    Station(
+                        code="SP01",
+                        latitude=61.299,
+                        longitude=-152.251,
+                        elevation=3374.0,
+                        channels=[
+                            Channel(
+                                code="BHZ",
+                                location_code="",
+                                latitude=61.299,
+                                longitude=-152.251,
+                                elevation=3374.0,
+                                depth=0.0,
+                                start_date=UTCDateTime("2024-01-01"),
+                                end_date=UTCDateTime("2025-01-01")
+                            )
+                        ]
+                    )
+                ]
+            )
+        ],
+        source="Test"
+    )
+    
+    # Test with default settings (should add EQSTA commands)
+    config.add_station_from_inventory(inv, sta_fmt="STA")
+    assert len(config.gtsrce_stations) == 1
+    assert len(config.eqsta_commands) == 2  # P and S phases
+    assert config.gtsrce_stations[0].label == "SP01"
+    
+    # Test with NET.STA format
+    config2 = NLLocConfig()
+    config2.add_station_from_inventory(inv, sta_fmt="NET.STA")
+    assert len(config2.gtsrce_stations) == 1
+    assert config2.gtsrce_stations[0].label == "AV.SP01"
+    assert len(config2.eqsta_commands) == 2  # P and S phases

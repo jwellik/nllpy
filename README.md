@@ -117,6 +117,21 @@ config.add_station_from_inventory("stations.xml", sta_fmt="NET_STA")
 config.add_station_from_fdsn("stations.txt", sta_fmt="NET.STA")
 ```
 
+**New: Support for ObsPy Inventory objects and improved XML handling**
+
+```python
+from obspy import read_inventory
+import nllpy
+
+# Method 1: Pass ObsPy Inventory object directly
+inv = read_inventory("station_metadata.xml")
+config = nllpy.create_volcano_config(lat_orig=46.51, lon_orig=8.48)
+config.add_station_from_inventory(inv, sta_fmt="STA")  # Uses ObsPy's parse_obspy_inventory
+
+# Method 2: Pass XML file path (now uses ObsPy's read_inventory internally)
+config.add_station_from_inventory("stations.xml", sta_fmt="NET.STA")  # Uses ObsPy's read_inventory
+```
+
 Detailed configuration:
 ```python
 from nllpy import NLLocConfig
@@ -158,7 +173,10 @@ inv = read_inventory("station_metadata.xml")
 # Create configuration
 config = nllpy.create_volcano_config(lat_orig=46.51, lon_orig=8.48)
 
-# Add stations from ObsPy inventory  
+# Method 1: Direct ObsPy Inventory object (recommended)
+config.add_station_from_inventory(inv, sta_fmt="STA")
+
+# Method 2: Manual parsing (legacy approach)
 from nllpy.utils.inventory import parse_obspy_inventory
 stations = parse_obspy_inventory(inv)
 for station in stations:

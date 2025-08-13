@@ -494,18 +494,38 @@ class NLLocConfig:
             lines.append(str(eqsta))
         return "\n".join(lines)
 
-    def add_station_from_inventory(self, inventory_file: str, sta_fmt: str = "STA"):
+    def add_station_from_inventory(self, inventory, sta_fmt: str = "STA"):
         """
-        Add stations from inventory file
+        Add stations from inventory file or ObsPy Inventory object
         
         Args:
-            inventory_file: Path to inventory file
+            inventory: Path to inventory file (XML or text) or ObsPy Inventory object
             sta_fmt: Station code format - "STA" for station only, "NET.STA" for network.station, "NET_STA" for network_station
-            add_eqsta: Whether to automatically add EQSTA commands for P and S phases (default: True)
         """
-
-        if not os.path.isfile(inventory_file):
-            stations = parse_inventory(inventory_file, sta_fmt=sta_fmt)
+        from ..utils.inventory import parse_inventory, parse_obspy_inventory
+        
+        # Check if inventory is an ObsPy Inventory object
+        if hasattr(inventory, 'networks'):
+            # It's an ObsPy Inventory object
+            stations = parse_obspy_inventory(inventory, sta_fmt=sta_fmt)
+        else:
+            # It's a file path
+            if not os.path.isfile(inventory):
+                raise FileNotFoundError(f"Inventory file not found: {inventory}")
+            
+            # Check if it's an XML file and use ObsPy's read_inventory if so
+            if str(inventory).lower().endswith(('.xml', '.stationxml')):
+                try:
+                    from obspy import read_inventory
+                    obspy_inventory = read_inventory(inventory)
+                    stations = parse_obspy_inventory(obspy_inventory, sta_fmt=sta_fmt)
+                except Exception as e:
+                    # Fall back to custom parsing if ObsPy fails
+                    stations = parse_inventory(inventory, sta_fmt=sta_fmt)
+            else:
+                # Use custom parsing for non-XML files
+                stations = parse_inventory(inventory, sta_fmt=sta_fmt)
+        
         for station_data in stations:
             self._add_station_to_gtsrce(station_data, sta_fmt=sta_fmt)
             self._add_station_to_eqsta(station_data, sta_fmt=sta_fmt)
@@ -517,7 +537,6 @@ class NLLocConfig:
         Args:
             fdsn_file: Path to FDSN format file (NET|STA|LAT|LON|ELEV|SITENAME|START|END)
             sta_fmt: Station code format - "STA" for station only, "NET.STA" for network.station, "NET_STA" for network_station
-            add_eqsta: Whether to automatically add EQSTA commands for P and S phases (default: True)
         """
         from ..utils.inventory import _parse_fdsn_inventory
         
@@ -945,7 +964,7 @@ class NLLocConfig:
                             )
             else:
                 # Local file - disable automatic EQSTA generation since we'll add custom ones
-                self.add_station_from_inventory(kwargs['inventory'], sta_fmt=sta_fmt, add_eqsta=False)
+                self.add_station_from_inventory(kwargs['inventory'], sta_fmt=sta_fmt)
                 # Add EQSTA commands for all stations with custom parameters
                 for station in self.gtsrce_stations:
                     if 'P' in phases:

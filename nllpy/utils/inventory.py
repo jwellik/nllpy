@@ -12,30 +12,29 @@ from pathlib import Path
 
 def parse_inventory(inventory, sta_fmt: str = "STA") -> List[Dict]:
     """
-    Parse station inventory from various formats
+    Parse station inventory from various formats (non-XML files only)
+    
+    For XML files, use ObsPy's read_inventory() directly or pass an ObsPy Inventory object
+    to add_station_from_inventory().
 
     Args:
-        inventory_file: ObsPy inventory object or path to inventory file (XML or text)
+        inventory: Path to inventory file (text formats only, not XML)
         sta_fmt: Station code format - "STA" for station only, "NET.STA" for network.station, "NET_STA" for network_station
 
     Returns:
         List of station dictionaries with keys: code, latitude, longitude, depth
     """
-    inventory_path = Path(inventory_file)
+    inventory_path = Path(inventory)
 
     if not inventory_path.exists():
-        raise FileNotFoundError(f"Inventory file not found: {inventory_file}")
+        raise FileNotFoundError(f"Inventory file not found: {inventory}")
 
-    # Try to parse as XML first
+    # Try to parse as FDSN format first
     try:
-        return _parse_stationxml(inventory_file, sta_fmt=sta_fmt)
-    except ET.ParseError:
-        # Try to parse as FDSN format
-        try:
-            return _parse_fdsn_inventory(inventory_file, sta_fmt=sta_fmt)
-        except ValueError:
-            # Fall back to simple text format
-            return _parse_simple_inventory(inventory_file)
+        return _parse_fdsn_inventory(inventory, sta_fmt=sta_fmt)
+    except ValueError:
+        # Fall back to simple text format
+        return _parse_simple_inventory(inventory)
 
 
 def _parse_stationxml(inventory_file: str, sta_fmt: str = "STA") -> List[Dict]:
@@ -194,13 +193,19 @@ def parse_obspy_inventory(inventory, sta_fmt: str = "STA"):
             lat = station.latitude
             lon = station.longitude
             elev = station.elevation
+            
             # Choose station code format based on preference
             if sta_fmt == "NET.STA":
                 code = f"{network.code}.{station.code}"
             elif sta_fmt == "NET_STA":
                 code = f"{network.code}_{station.code}"
+            elif sta_fmt == "NET.STA.LOC":
+                code = f"{network.code}.{station.code}."
+            elif sta_fmt == "NET_STA_LOC":
+                code = f"{network.code}_{station.code}_"
             else:
                 code = station.code
+                
             depth = -elev / 1000.0  # Convert to km depth
 
             stations.append({
